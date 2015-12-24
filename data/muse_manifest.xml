@@ -1,0 +1,27 @@
+<manifest alg="2" build="11" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1450562214284">
+  <folder name="css">
+    <file name="site_global.css" crc="438240654"/>
+    <file name="index.css" crc="252237687" ref="index"/>
+    <file name="iefonts_index.css" crc="85985666" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <file name="trevel-karta-10122015.pdf" crc="4104987992" mt="1450447232000"/>
+    <file name="avtokarta-10122015.pdf" crc="4201907942" mt="1450447233000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3880902115" ref="index"/>
+    <file name="museutils.js" crc="521960461" ref="index"/>
+    <file name="jquery.watch.js" crc="56779320" ref="index"/>
+    <file name="pie.js" crc="3827607177" ref="index"/>
+    <file name="webpro.js" crc="220831917" ref="index"/>
+    <file name="musewpslideshow.js" crc="224651946" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="276313855" ref="index"/>
+    <file name="touchswipe.js" crc="325405309" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="02.jpg" crc="4182880995" ref="index"/>
+    <file name="1-000-рублей-в-подарок-каждому-favicon.ico" crc="4260102414" ref="index"/>
+    <file name="01 (1).jpg" crc="4167097075" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4000821382" mt="1450562213688" redirect="true"/>
+</manifest>
