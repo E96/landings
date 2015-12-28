@@ -1,27 +1,28 @@
-<manifest alg="2" build="11" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1450562214284">
+<manifest alg="2" build="2015.0.2.310" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.e96.ru/1000r" resolutions="1x" timestamp="1451038269390">
   <folder name="css">
-    <file name="site_global.css" crc="438240654"/>
-    <file name="index.css" crc="252237687" ref="index"/>
+    <file name="site_global.css" crc="4052507572"/>
+    <file name="index.css" crc="3844460940" ref="index"/>
     <file name="iefonts_index.css" crc="85985666" ref="index"/>
   </folder>
   <folder name="assets">
-    <file name="trevel-karta-10122015.pdf" crc="4104987992" mt="1450447232000"/>
-    <file name="avtokarta-10122015.pdf" crc="4201907942" mt="1450447233000"/>
+    <file name="trevel-karta-10122015.pdf" crc="4104987992" seo="true" mt="1450447232000"/>
+    <file name="avtokarta-10122015.pdf" crc="4201907942" seo="true" mt="1450447233000"/>
   </folder>
   <folder name="scripts">
-    <file name="jquery-1.8.3.min.js" crc="3880902115" ref="index"/>
-    <file name="museutils.js" crc="521960461" ref="index"/>
-    <file name="jquery.watch.js" crc="56779320" ref="index"/>
+    <file name="jquery-1.8.3.min.js" crc="196614522" ref="index"/>
+    <file name="museutils.js" crc="275725342" ref="index"/>
     <file name="pie.js" crc="3827607177" ref="index"/>
-    <file name="webpro.js" crc="220831917" ref="index"/>
-    <file name="musewpslideshow.js" crc="224651946" ref="index"/>
-    <file name="jquery.museoverlay.js" crc="276313855" ref="index"/>
-    <file name="touchswipe.js" crc="325405309" ref="index"/>
+    <file name="webpro.js" crc="3883484123" ref="index"/>
+    <file name="musewpslideshow.js" crc="360574455" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="342093292" ref="index"/>
+    <file name="touchswipe.js" crc="4218319045" ref="index"/>
+    <file name="jquery.watch.js" crc="3999102769" ref="index"/>
   </folder>
   <folder name="images">
-    <file name="02.jpg" crc="4182880995" ref="index"/>
-    <file name="1-000-рублей-в-подарок-каждому-favicon.ico" crc="4260102414" ref="index"/>
-    <file name="01 (1).jpg" crc="4167097075" ref="index"/>
+    <file name="100r-favicon.ico" crc="4260102414" ref="index"/>
+    <file name="01.png" crc="3890326765" ref="index"/>
+    <file name="02.jpg" crc="4182880995" seo="true" ref="index"/>
+    <file name="012.png" crc="3840346208" ref="index"/>
   </folder>
-  <file name="index.html" crc="4000821382" mt="1450562213688" redirect="true"/>
+  <file name="index.html" crc="210780474" seo="true" mt="1451038245575" redirect="true"/>
 </manifest>
