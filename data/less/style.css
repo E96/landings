@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+img {
+  vertical-align: middle;
+}
 @font-face {
   font-family: "SegoeUIRegular";
   src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
@@ -232,6 +235,12 @@ a:active {
   font-size: 24px;
   line-height: 1.5;
 }
+.wrapper .footer .counters {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
 .products {
   margin-bottom: 40px;
 }
@@ -335,4 +344,10 @@ a:active {
 }
 .products .products-wrap .product.big .old-price {
   font-size: 16px;
+}
+.site-link-wrap {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 150px 0;
 }
