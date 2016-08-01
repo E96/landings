@@ -29,6 +29,7 @@ $(document).ready(function() {
                 form.find('input,textarea').val('');
                 $('.modal_form').hide();
                 $('.modal_message').show();
+                dataLayer.push({'event': 'otpravka_formy_fr'});
             }
         });
     });
