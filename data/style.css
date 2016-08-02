@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: "Verdana", serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+   
+}
+
+.experts{
+    max-width: 40%;
+    justify-content: center;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.doc{
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 200px;
+    min-width: 100px;
+    padding: 50px 40px 0 10%; 
+}
+
+#header {
+    background-color:chocolate;
+    background-image: url(img/hat_img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page_name {
+    font-size: 2.7em;
+    line-height: 1.3em;
+    font-weight: 800;
+    color: #fff;
+    max-width: 50%;
+    padding: 100px 40px 0 10%;
+    text-shadow: 0px 1px 3px black;
+}
+
+#page_description {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #fff;
+    max-width: 50%;
+    padding: 10px 40px 200px 10%;
+    text-shadow: 0px 1px 3px black;
+}
+
+#prologue {
+    max-width: 960px;
+    margin: 30px auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    color: #43332d;
+}
+
+.plain_text {
+    max-width: 960px;
+    margin: 30px auto;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: rgb(33, 33, 33);
+    padding: 0 30px;
+}
+
+h1 {
+    font-size: 2.1em;
+    line-height: 1.5em;
+    margin: 20px auto;
+    margin-top: 40px;
+    padding: 0;
+    
+}
+
+.illustration {
+    margin: 40px auto;
+    display: flex;
+    margin-bottom: 0px;
+    max-width: 80%;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.expert_qoute {
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    background-color: #f0f1e0;
+    border-radius: 10px;
+    max-width: 960px;
+    margin: 150px auto 0 auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 20px;
+}
+
+.expert_photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: -100px;
+}
+
+.expert_text {
+   padding: 10px auto;
+    margin: 10px 30px;
+}
+
+.photo_description {
+    max-width: 960px;
+    margin: 10px auto;
+    text-align: center;
+    color: #ccc;
+    font-size: 0.8em;
+    
+}
+
+table {
+    max-width: 960px;
+    margin: 80px auto 0 auto;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    border-spacing: 40px 0px;
+}
+
+td {
+    width: 50%;
+    padding-left: 0px; 
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #435e6f;
+}
+
+.comparison {
+    width: 100%;
+    background-color: #39505e;
+    color: #fff;
+}
+
+a {
+    color: #0385e1;
+}
+
+a:hover {
+    color: #ff7505;
+}
+
+a.white_link {
+    color: #03dcf0;
+}
+
+a.white_link:hover{
+    color: #ffbb03;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: decimal;
+    line-height: 2em;
+}
+
+.nota_bene {
+    max-width: 960px;
+    margin: 30px auto;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 0 30px;
+    border-left: 3px solid red;
+}
+
+.catalog {
+    max-width: 960px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+}
+
+.category {
+    margin: 20px auto;
+    width: 200px;
+    min-width: 100px;
+}
+
+.share {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center; 
+}
+
+.illustration_roll {
+    margin: 40px auto;
+    display: flex;
+    margin-bottom: 0px;
+    max-width: 80%;
+}
+
+.plain_text_center {
+    max-width: 960px;
+    margin: 30px auto;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: rgb(33, 33, 33);
+    padding: 0 30px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.buttons > .field {
+    display: inline-block;
+    margin-right: 20px;
+}
