@@ -9,6 +9,8 @@ $(document).ready(function() {
                 email = element.value;
             } else if (element.name == 'city') {
                 city = element.value;
+            } else if (element.name == 'name') {
+                name = element.value;
             }
         });
         dataLayer.push({

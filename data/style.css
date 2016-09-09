@@ -3,6 +3,11 @@
     src: url(fonts/SegoeUILight.eot);
     src: local(SegoeUILight), url(fonts/SegoeUILight.ttf);
 }
+@font-face {
+    font-family: SegoeUIBold;
+    src: url(fonts/SegoeUIBold.eot);
+    src: local(SegoeUIBold), url(fonts/SegoeUIBold.ttf);
+}
 body {
     font-family: SegoeUILight, sans-serif;
     margin: 0;
@@ -60,6 +65,9 @@ p {
     padding-bottom: 60px;
     color: #000;
 }
+.start p {
+    font-size: 32px;
+}
 
 .goods {
     background-color: #fafafa;
@@ -85,6 +93,7 @@ p {
     color: #a6a6a6;
 }
 .form h2 {
+    padding: 0 20px;
 }
 form {
     width: 500px;
@@ -116,6 +125,7 @@ form > div > select {
     box-sizing: border-box;
     font-size: 22px;
     border: 0;
+    margin-bottom: 20px;
 }
 form .checkbox {
     margin-top: 30px;
@@ -209,6 +219,14 @@ form .checkbox > span {
 .conditions p {
     text-align: left;
 }
+.conditions a {
+    color: #888;
+}
+.conditions a:hover {
+    color: #f60;
+}
+
+
 
 .steps {
     padding: 60px 0;
@@ -256,6 +274,7 @@ form .checkbox > span {
 
 p.bold {
     font-weight: bold;
+    font-family: SegoeUIBold, sans-serif;
 }
 .rouble {
     height: 12px;
@@ -284,6 +303,6 @@ p.bold {
         width: 40%;
     }
     form {
-        width: 300px;
+        width: 250px;
     }
 }
