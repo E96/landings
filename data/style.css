@@ -59,6 +59,11 @@ p {
 .row-2 > div > img:first-child {
     margin-right: 30px;
 }
+.col {
+    width: 25%;
+    display: inline-block;
+    font-size: 0;
+}
 
 .start {
     background-color: #e0e6e9;
@@ -183,31 +188,25 @@ form .checkbox > span {
 }
 .old_goods h2 {
     color: #000;
-    margin-bottom: 0;
-}
-.old_goods h3 {
-    font-size: 28px;
-    margin-top: 0;
     margin-bottom: 80px;
 }
-.old_goods .row > a {
+.old_goods .col > a {
     font-size: 24px;
     text-decoration: none;
 }
-.old_goods .row > a > p {
+.old_goods .col > a > p {
     color: #2197d2;
 }
-.old_goods .row > a:hover > p {
+.old_goods .col > a:hover > p {
     color: #f60;
 }
 .old_goods p {
     color: #000;
     font-size: 24px;
-    margin-bottom: 0;
-}
-.old_goods p.price {
-    margin-top: 10px;
     margin-bottom: 28px;
+}
+.old_goods img {
+    height: 236px;
 }
 
 .conditions {
@@ -281,7 +280,8 @@ p.bold {
 }
 @media screen and (max-width: 768px) {
     .row,
-    .row-2 {
+    .row-2,
+    .col {
         display: block;
         width: 100%;
         margin-bottom: 30px;
@@ -297,6 +297,7 @@ p.bold {
     .conditions .container {
         padding: 0 30px;
     }
+
 }
 @media screen and (max-width: 400px) {
     .row-2 > div > img {

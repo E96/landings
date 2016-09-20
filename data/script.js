@@ -21,4 +21,9 @@ $(document).ready(function() {
         });
         $('#success').show();
     });
+    $("#participate").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#form").offset().top
+        }, 2000);
+    });
 });
