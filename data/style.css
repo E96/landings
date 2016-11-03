@@ -181,34 +181,6 @@ form .checkbox > span {
     font-size: 20px;
 } 
 
-.old_goods {
-    background: #fafafa;
-    padding: 50px 0 80px;
-    font-size: 0;
-}
-.old_goods h2 {
-    color: #000;
-    margin-bottom: 80px;
-}
-.old_goods .col > a {
-    font-size: 24px;
-    text-decoration: none;
-}
-.old_goods .col > a > p {
-    color: #2197d2;
-}
-.old_goods .col > a:hover > p {
-    color: #f60;
-}
-.old_goods p {
-    color: #000;
-    font-size: 24px;
-    margin-bottom: 28px;
-}
-.old_goods img {
-    height: 236px;
-}
-
 .conditions {
     padding: 50px 0 80px;
 }
@@ -226,6 +198,32 @@ form .checkbox > span {
 }
 
 
+.choose {
+    height: 400px;
+    background-color: #000;
+}
+.choose img {
+    padding-top: 48px;
+    display: inline-block;
+}
+.choose .button {
+    font-size: 36px;
+    color: #fff;
+    border: 1px solid;
+    padding: 20px 70px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 150px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+.choose .button:hover {
+    color: #ff8d41;
+}
+.choose .button:active {
+    margin-top: 160px;
+    margin-bottom: 0;
+}
 
 .steps {
     padding: 60px 0;
@@ -278,6 +276,28 @@ p.bold {
 .rouble {
     height: 12px;
 }
+@media screen and (max-width: 900px) {
+    .choose {
+        height: 491px;
+    }
+    .choose img {
+        padding-top: 200px;
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+    .choose .button {
+        position: relative;
+        top: -430px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .choose .button:active {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}
 @media screen and (max-width: 768px) {
     .row,
     .row-2,
@@ -297,13 +317,27 @@ p.bold {
     .conditions .container {
         padding: 0 30px;
     }
-
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
     .row-2 > div > img {
         width: 40%;
     }
     form {
         width: 250px;
+    }
+    .choose {
+        height: 364px;
+    }
+    .choose img {
+        padding-top: 170px;
+        width: 200px;
+    }
+    .choose .button {
+        width: 250px;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 14px;
+        position: relative;
+        top: -320px;
     }
 }
