@@ -1,0 +1,52 @@
+.tile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile-quart {
+
+  & .tile--piece {
+    flex: 0 1 25%;
+  }
+}
+
+.tile--piece {
+  position: relative;
+  height: 4.75rem;
+  border: 1px solid #dfdfdf;
+  border-top-width: 0;
+  border-left-width: 0;
+  background-color: #fff;
+
+  &:hover,
+  &:active {
+    opacity: .8;
+  }
+
+  &:nth-child(4n+1) {
+    border-left-width: 1px;
+  }
+
+  &:nth-child(-n+4) {
+    border-top-width: 1px;
+  }
+}
+
+.tile--piece-m_video {
+  background-color: #ff0b07;
+}
+
+.tile--piece-tinkoff {
+  background-color: #ffe004;
+}
+
+.tile--img {
+  position: absolute;
+  top: -999px;
+  right: -999px;
+  bottom: -999px;
+  left: -999px;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}

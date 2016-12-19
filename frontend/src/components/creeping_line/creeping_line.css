@@ -1,0 +1,14 @@
+.creeping_line {
+  font-size: 4.875rem;
+  display: table !important; /* TODO: get rid of this. */
+}
+
+.creeping_line--content {
+  font-size: .875rem;
+  line-height: 1.3571;
+  display: table-cell;
+  width: 486px;
+  height: 100%;
+  padding: 0 2.8571em;
+  vertical-align: middle;
+}

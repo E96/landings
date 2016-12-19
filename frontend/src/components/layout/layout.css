@@ -1,0 +1,184 @@
+@import '../../constants.css';
+
+* {
+  box-sizing: border-box;
+}
+
+.root {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  font-family: var(--font-default);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.root,
+.root--body {
+  height: 100%;
+}
+
+.layout {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.layout--marquee {
+  margin-left: 716px;
+}
+
+.layout--header {
+  position: relative;
+  z-index: 400;
+}
+
+.layout--countdown {
+  position: relative;
+  margin-left: 196px;
+}
+
+.layout--countdown_date {
+  position: absolute;
+  top: 35px;
+  left: -96px;
+}
+
+.layout--sign_up {
+  margin-left: 65px;
+}
+
+.layout--banner {
+  position: relative;
+  z-index: 300;
+  width: 1186px;
+  height: 580px;
+  margin: -46px auto 0;
+}
+
+.layout--parties {
+  margin-top: 56px;
+  margin-left: 64px;
+}
+
+.layout--take_part {
+  margin-top: 106px;
+  margin-left: 106px;
+}
+
+.layout--top_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+/* Some mess here so far. */
+.countdown--content {
+  height: 100%;
+  padding-left: 30px;
+}
+
+.countdown_date {
+  font-size: 2.625rem;
+}
+
+.countdown_date--content {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 2.3333;
+  width: 226px;
+  padding-right: .5em;
+  text-align: right;
+}
+
+.parties {
+  position: relative;
+  padding-top: 110px;
+}
+
+.parties--heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: .9643;
+  position: absolute;
+  top: 30px;
+  left: 300px;
+}
+
+.parties--badge_count {
+  font-size: 4.875rem;
+  font-weight: 700;
+  line-height: 1;
+  position: absolute;
+  z-index: 40;
+  top: 8px;
+  left: 120px;
+  color: var(--color-white);
+}
+
+.parties--badge_extra {
+  font-size: .875rem;
+  line-height: 1.1429;
+  position: absolute;
+  z-index: 40;
+  top: 22px;
+  left: 54px;
+  color: var(--color-white);
+}
+
+.parties--tile {
+  width: 786px;
+  margin-left: 190px;
+}
+
+.take_part {
+  position: relative;
+  padding-top: 135px;
+  padding-left: 70px;
+}
+
+.take_part--badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.take_part--badge_text {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.2222;
+  position: absolute;
+  z-index: 40;
+  top: 20px;
+  left: 70px;
+  white-space: nowrap;
+  color: var(--color-white);
+}
+
+.take_part--desc {
+  font-size: .9375rem;
+  font-weight: 500;
+  line-height: 1.2;
+  position: absolute;
+  top: 30px;
+  left: 366px;
+}
+
+.take_part--form {
+  position: relative;
+  z-index: 40;
+  width: 930px;
+}
+
+.footer_logo {
+  position: absolute;
+  bottom: -200px;
+  left: 40%;
+  width: 86px;
+}
+
+.footer_logo--img {
+  width: 100%;
+}

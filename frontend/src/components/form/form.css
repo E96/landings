@@ -1,0 +1,62 @@
+@import '../../constants.css';
+
+.form-one_liner {
+  display: flex;
+
+  & .form--fieldset {
+    border-right: none;
+  }
+}
+
+.form--fieldset {
+  flex: 1 1 auto;
+  height: 3.375em;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #979797;
+}
+
+.form--fieldset-borderless {
+  border-width: 0;
+}
+
+.form--fieldset-triple {
+
+  & .form--input {
+    width: 33.3333%;
+  }
+}
+
+.form--input {
+  font-family: var(--font-default);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 3;
+  float: left;
+  height: 100%;
+  padding: 0 1.25em;
+  border: none;
+  border-left: 1px solid #d5d5d5;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:first-child {
+    border-left: none;
+  }
+
+  &::placeholder {
+    font-size: .8333em;
+    line-height: 3.6;
+    color: #7f7f7f;
+  }
+}
+
+.form--input-name {
+  width: 45%;
+}
+
+.form--input-email {
+  width: 55%;
+}

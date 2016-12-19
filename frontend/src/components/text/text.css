@@ -1,0 +1,7 @@
+.text--bold {
+  font-weight: 700;
+}
+
+.text--no_wrap {
+  white-space: nowrap;
+}
