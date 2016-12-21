@@ -215,11 +215,11 @@ p {margin: 0;
 .modal_form {
     display: none;
     position: fixed;
-    top: 50%;
+    top: 44%;
     left: 50%;
     background-color: #fff;
     width: 600px;
-    height: 595px;
+    height: 667px;
     margin-left: -300px;
     margin-top: -315px;
     border-radius: 3px;
@@ -235,7 +235,7 @@ p {margin: 0;
 
 .form {
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .string {
@@ -256,6 +256,7 @@ textarea {
     padding: 10px 15px 0 15px;
     font-size: 20px;
     color: #2c343b;
+    resize: none;
 }
 
 .send {
