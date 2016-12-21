@@ -15,10 +15,14 @@ class Countdown extends Component {
   constructor (props) {
     super(props)
 
-    this.state = Object.assign(
-      this.getTimeRemaining(),
-      { areDotsVisible: true }
-    )
+    this.state = {
+      ...this.getTimeRemaining(),
+      shouldUpdateTime: true,
+      areDotsVisible: false
+    }
+
+    this.updateDots = this.updateDots.bind(this)
+    this.updateTime = this.updateTime.bind(this)
   }
 
   /**
@@ -31,18 +35,29 @@ class Countdown extends Component {
     return parseMillis(time)
   }
 
+  updateDots () {
+    this.setState({
+      areDotsVisible: !this.state.areDotsVisible,
+      shouldUpdateTime: !this.state.shouldUpdateTime
+    })
+  }
+
+  updateTime () {
+    this.setState({
+      ...this.state,
+      ...this.getTimeRemaining(),
+      shouldUpdateTime: !this.state.shouldUpdateTime
+    })
+  }
+
   componentDidMount () {
-    setInterval(
-      () => {
-        const state = Object.assign(
-          this.state,
-          this.getTimeRemaining(),
-          { areDotsVisible: !this.state.areDotsVisible }
-        )
-        this.setState(state)
-      },
-      1000
-    )
+    setInterval(() => {
+      if (this.state.shouldUpdateTime) {
+        this.updateTime()
+      } else {
+        this.updateDots()
+      }
+    }, 500)
   }
 
   render () {

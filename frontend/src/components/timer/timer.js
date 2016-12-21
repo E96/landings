@@ -22,13 +22,13 @@ const Timer = (props) => {
         <div className="timer--label">{dayLabel}</div>
       </div>
       <div className="timer--dial">
+        {areDotsVisible &&
+          <div className="timer--dots"></div>
+        }
         <div className="timer--value">{hour}</div>
         <div className="timer--label">{hourLabel}</div>
       </div>
       <div className="timer--dial">
-        {areDotsVisible &&
-          <div className="timer--dots"></div>
-        }
         <div className="timer--value">{minute}</div>
         <div className="timer--label">{minuteLabel}</div>
       </div>
