@@ -2,7 +2,9 @@ const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-module.exports = {
+const env = process.env.NODE_ENV
+
+const config = {
   resolve: {
     root: path.resolve(__dirname, './src')
   },
@@ -16,28 +18,17 @@ module.exports = {
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
       {
         test: /\.css$/,
-        // loader: 'style-loader!css-loader!postcss-loader'
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader?sourceMap')
+        loaders: ['style-loader', 'css-loader', 'postcss-loader']
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin('bundle.css'),
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.DedupePlugin(),
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      output: {
-        comments: false
-      },
-      compressor: {
-        warnings: false
-      }
-    })
   ],
   postcss: () => {
     return [
@@ -48,5 +39,31 @@ module.exports = {
       require('postcss-reporter')(),
     ]
   },
-  // devtool: '#cheap-module-eval-source-map'
+  devtool: '#cheap-module-eval-source-map'
 }
+
+if (env === 'production') {
+  config.plugins.push(
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        comparisons: true,
+        drop_debugger: true,
+        unsafe: true,
+        unsafe_comps: true,
+        warnings: false
+      },
+      output: {
+        comments: false
+      }
+    }),
+    new ExtractTextPlugin('bundle.[hash].css')
+  )
+
+  delete config.module.loaders[1].loaders
+  config.module.loaders[1].loader = ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader?sourceMap')
+
+  config.devtool = '#cheap-module-source-map'
+}
+
+module.exports = config
