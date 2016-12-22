@@ -25,6 +25,7 @@
 }
 
 .layout--marquee {
+  height: 44px;
   margin-left: 716px;
 }
 
@@ -56,14 +57,24 @@
   margin: -46px auto 0;
 }
 
+.layout--desc {
+  width: 590px;
+  margin-left: 260px;
+}
+
 .layout--parties {
-  margin-top: 56px;
+  margin-top: 100px;
   margin-left: 64px;
 }
 
 .layout--take_part {
   margin-top: 106px;
   margin-left: 106px;
+}
+
+.layout--footer {
+  margin-top: 260px;
+  padding-bottom: 160px;
 }
 
 .layout--top_layer {
@@ -181,4 +192,59 @@
 
 .footer_logo--img {
   width: 100%;
+}
+
+.desc {
+  position: relative;
+}
+
+.desc--heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.desc--text {
+  font-size: .9375rem;
+  line-height: 1.1333;
+}
+
+.desc--incitement {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.1786;
+  margin-top: 1rem;
+  color: var(--color-cherry);
+}
+
+.desc--pointer {
+  position: absolute;
+  top: -10px;
+  left: -120px;
+}
+
+.footer_links {
+  position: relative;
+  width: 450px;
+  margin: 0 auto;
+
+  &::before,
+  &::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+.footer_links--elem {
+  float: left;
+  width: 50%;
+  vertical-align: top;
+  text-align: center;
+}
+
+.footer_links--label {
+  font-size: .8125em;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }

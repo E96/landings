@@ -30,14 +30,73 @@
   &:nth-child(-n+4) {
     border-top-width: 1px;
   }
-}
 
-.tile--piece-m_video {
-  background-color: #ff0b07;
-}
+  &-enter {
+    background-color: #000;
 
-.tile--piece-tinkoff {
-  background-color: #ffe004;
+    & .tile--img {
+      height: 80%;
+    }
+  }
+
+  &-kupivip {
+    background-color: #652d8a;
+
+    & .tile--img {
+      height: 80%;
+    }
+  }
+
+  &-sportmaster {
+    background-color: #2d4c9b;
+
+    & .tile--img {
+      height: 70%;
+    }
+  }
+
+  &-mediamarkt {
+    background-color: #e2007a;
+  }
+
+  &-m_video {
+    background-color: #ff0b07;
+  }
+
+  &-220_volt {
+    background-color: #fff203;
+  }
+
+  &-upnrun {
+    background-color: #000;
+  }
+
+  &-street_beat {
+    background-color: #003a46;
+
+    & .tile--img {
+      height: 80%;
+    }
+  }
+
+  &-sony_centre {
+    background-color: #000;
+  }
+
+  &-re_store {
+    background-color: #f5f5f5;
+  }
+
+  &-adamas {
+    background-color: #009589;
+  }
+
+  &-citylink {
+
+    & .tile--img {
+      height: 45%;
+    }
+  }
 }
 
 .tile--img {

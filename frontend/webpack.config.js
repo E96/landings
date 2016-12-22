@@ -57,7 +57,7 @@ if (env === 'production') {
         comments: false
       }
     }),
-    new ExtractTextPlugin('bundle.[hash].css')
+    new ExtractTextPlugin('bundle.css')
   )
 
   delete config.module.loaders[1].loaders

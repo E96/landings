@@ -28,6 +28,10 @@
   border-top-color: var(--color-purple);
 }
 
+.triangle-color-smoke {
+  border-top-color: var(--color-smoke);
+}
+
 .triangle-color-turquoise {
   border-top-color: var(--color-turquoise);
 }
@@ -41,6 +45,14 @@
   font-size: 15.25rem;
   top: 0;
   left: 0;
+}
+
+.triangle-13 {
+  font-size: 12rem;
+  position: absolute;
+  top: -30px;
+  left: -120px;
+  z-index: -1;
 }
 
 .triangle-14 {
@@ -94,32 +106,57 @@
 
 .triangle-29 {
   font-size: 2.5rem;
-  top: 1800px;
+  top: 2250px;
   left: 130px;
 }
 
 .triangle-30 {
   font-size: 4.5rem;
-  top: 2300px;
+  top: 2550px;
   left: 1000px;
 }
 
 .triangle-31 {
   font-size: 2.5rem;
-  top: 2450px;
+  top: 2700px;
   left: 580px;
 }
 
 .triangle-32 {
   font-size: 2.5rem;
-  top: 2740px;
+  top: 3000px;
   left: 127px;
 }
 
 .triangle-33 {
   font-size: 2.5rem;
-  top: 2740px;
+  top: 3000px;
   left: 430px;
+}
+
+.triangle-40 {
+  font-size: 6.875rem;
+  z-index: -1;
+  top: 1550px;
+  left: 712px;
+}
+
+.triangle-41 {
+  font-size: 2.5rem;
+  top: 1600px;
+  left: 80px;
+}
+
+.triangle-42 {
+  font-size: 4.5rem;
+  top: 1720px;
+  left: 360px;
+}
+
+.triangle-43 {
+  font-size: 6.875rem;
+  top: 1690px;
+  left: 850px;
 }
 
 .triangle-44 {
@@ -127,6 +164,19 @@
   z-index: 10;
   top: 40px;
   left: 256px;
+}
+
+.triangle-53 {
+  font-size: 6.875rem;
+  top: 3140px;
+  left: 890px;
+}
+
+.triangle-54 {
+  font-size: 2.5rem;
+  z-index: 10;
+  top: 3180px;
+  left: 220px;
 }
 
 .triangle-69 {
