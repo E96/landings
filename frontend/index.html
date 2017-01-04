@@ -2,8 +2,9 @@
 <html class="root">
 <head>
   <meta charset="utf-8">
-  <title>Киберпонедельник</title>
+  <title>Киберпонедельник 2017 — крупнейшая распродажа зимы</title>
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Киберпонедельник 2017 — крупнейшая распродажа зимы. Получайте скидки до 90% на лучшие товары в крупнейших компаниях и сервисах." />
   <link rel="stylesheet" href="static/bundle.css" />
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M7XCHWM');</script>
 </head>
@@ -23,7 +24,7 @@
             </div>
             <div class="header_piece--creeping_line stripe stripe-inverse-left stripe-color-smoke">
               <div class="creeping_line">
-                <div class="creeping_line--content">Сеть магазинов М.Видео присоединилась к&nbsp;всероссийской распродаже Киберпонедельник&nbsp;2017</div>
+                <div class="creeping_line--content">Киберпонедельник&nbsp;— только начало!<br />Следующая распродажа состоится 14&nbsp;февраля.</div>
               </div>
             </div>
             <div class="header_piece--incitement">
@@ -65,7 +66,7 @@
             <div class="sign_up_piece--heading">Подпишитесь сейчас</div>
             <div class="sign_up_piece--incitement">Получите доступ к&nbsp;скидкам за&nbsp;5&nbsp;часов до&nbsp;начала акции!</div>
             <div class="sign_up_piece--form">
-              <form class="form form-one_liner" action="">
+              <form class="form form-one_liner" onsubmit="return sendClientForm()">
                 <fieldset class="form--fieldset form--fieldset-borderless form--fieldset-sign_up">
                   <input class="form--input form--input-name" type="text" name="name" placeholder="Имя" />
                   <input class="form--input form--input-email" type="email" name="email" placeholder="Почта" />
@@ -73,6 +74,22 @@
                 <button class="button button-color-pink">Подписаться</button>
               </form>
             </div>
+            <script type="text/javascript">
+              function sendClientForm() {
+                directCrm('identify', {
+                  operation: 'odsuser',
+                  identificator: {
+                    provider: 'email',
+                    identity: document.forms[0]["email"].value
+                  },
+                  data: {
+                    firstName: document.forms[0]["name"].value
+                  }
+                })
+                alert("Спасибо, мы обязательно пришлём Вам письмо!");
+                return false;
+              };
+            </script>
           </div>
         </div>
         <div class="pllx--layer pllx--layer-plus-2">
@@ -126,7 +143,7 @@
           <div class="desc_piece--triangle1 triangle triangle-color-pink"></div>
           <div class="desc_piece--creeping_line stripe stripe-inverse-left stripe-color-smoke">
             <div class="creeping_line">
-              <div class="creeping_line--content">Сеть магазинов М.Видео присоединилась к&nbsp;всероссийской распродаже Киберпонедельник&nbsp;2017</div>
+              <div class="creeping_line--content">Киберпонедельник&nbsp;— только начало!<br />Следующая распродажа состоится 14&nbsp;февраля.</div>
             </div>
           </div>
           <div class="desc_piece--content">
@@ -290,7 +307,7 @@
             <div class="take_part_piece--badge_text">Ваша компания тоже<br />может участвовать<br />в Киберпонедельнике!</div>
             <div class="take_part_piece--desc">Стать участником крупнейшей зимней распродажи Киберпонедельник 2017 очень просто&nbsp;— заполните форму и&nbsp;наш менеджер свяжется с&nbsp;вами очень-очень быстро и&nbsp;расскажет, как действовать</div>
             <div class="take_part_piece--form">
-              <form class="form form-one_liner" action="">
+              <form class="form form-one_liner" onsubmit="return sendMerchantForm()">
                 <fieldset class="form--fieldset form--fieldset-triple">
                   <input class="form--input" type="text" name="name" placeholder="Компания" />
                   <input class="form--input" type="tel" name="phone" placeholder="Телефон" />
@@ -299,6 +316,23 @@
                 <button class="button button-color-pink">Стать участником</button>
               </form>
             </div>
+            <script type="text/javascript">
+              function sendMerchantForm() {
+                directCrm('identify', {
+                  operation: 'odssale',
+                  identificator: {
+                    provider: 'email',
+                    identity: document.forms[1]["email"].value
+                  },
+                  data: {
+                    company: document.forms[1]["name"].value,
+                    mobilePhone: document.forms[1]["phone"].value
+                  }
+                })
+                alert("Спасибо, мы обязательно с Вами свяжемся!");
+                return false;
+              };
+            </script>
           </div>
         </div>
         <div class="pllx--layer pllx--layer-plus-1">
