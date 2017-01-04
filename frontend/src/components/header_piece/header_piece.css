@@ -1,0 +1,142 @@
+@import '../../constants.css';
+
+.header_piece {
+  position: relative;
+  height: 25.75rem;
+}
+
+.header_piece--background_triangle {
+  font-size: 23.25rem;
+  top: 4.75rem;
+  left: 50%;
+  margin-left: -21.625rem;
+}
+
+.header_piece--logo {
+  position: absolute;
+  top: 2.25rem;
+  left: 50%;
+  margin-left: -18rem;
+}
+
+.header_piece--heading_triangle {
+  font-size: 18.875rem;
+  position: absolute;
+  top: 6.875rem;
+  left: 50%;
+  margin-left: -9.75rem;
+}
+
+.header_piece--heading {
+  font-size: 1.125rem;
+  line-height: 1.1667;
+  position: absolute;
+  top: 8.25rem;
+  left: 50%;
+  margin-left: -4.75rem;
+  color: var(--color-white);
+}
+
+.header_piece--creeping_line {
+  font-size: 4.875rem;
+  position: absolute;
+  top: 260px;
+  right: 56px;
+  left: 50%;
+  margin-left: 60px;
+}
+
+.header_piece--incitement {
+  font-size: .9375rem;
+  font-weight: 500;
+  line-height: 1.2;
+  position: absolute;
+  top: 10.875rem;
+  left: 50%;
+  margin-left: 190px;
+}
+
+.header_piece--triangle1 {
+  font-size: 2.5em;
+  top: 190px;
+  left: 50%;
+  margin-left: -414px;
+}
+
+.header_piece--triangle2 {
+  font-size: 2.5em;
+  top: 112px;
+  left: 50%;
+  margin-left: 238px;
+}
+
+.header_piece--triangle3 {
+  font-size: 4.75em;
+  top: 296px;
+  left: 50%;
+  margin-left: -484px;
+}
+
+@media (--viewport-under-60) {
+  .header_piece {
+    height: 21.5rem;
+  }
+
+  .header_piece--background_triangle {
+    font-size: 10.25rem;
+    top: 12px;
+    margin-left: -138px;
+  }
+
+  .header_piece--logo {
+    top: 46px;
+    width: 82px;
+    margin-left: -41px;
+  }
+
+  .header_piece--heading_triangle {
+    font-size: 7.75rem;
+    top: 58px;
+    margin-left: -36px;
+  }
+
+  .header_piece--heading {
+    font-weight: 700;
+    line-height: 1.1666;
+    top: 190px;
+    right: 10%;
+    left: 10%;
+    margin-left: 0;
+    text-align: center;
+    color: var(--color-pink);
+  }
+
+  .header_piece--incitement {
+    font-size: .8125em;
+    font-weight: 500;
+    line-height: 1.2308;
+    top: 264px;
+    right: 10%;
+    left: 10%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .header_piece--creeping_line {
+    display: none;
+  }
+
+  .header_piece--triangle1 {
+    top: 74px;
+    margin-left: -134px;
+  }
+
+  .header_piece--triangle2 {
+    top: 92px;
+    margin-left: 74px;
+  }
+
+  .header_piece--triangle3 {
+    display: none;
+  }
+}

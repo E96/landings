@@ -1,0 +1,170 @@
+@import '../../constants.css';
+
+.desc_piece {
+  position: relative;
+  height: 28.875rem;
+}
+
+.desc_piece--heading_triangle {
+  font-size: 12rem;
+  position: absolute;
+  z-index: -1;
+  top: 42px;
+  left: 50%;
+  margin-left: -450px;
+}
+
+.desc_piece--creeping_line {
+  display: none;
+}
+
+.desc_piece--pointer {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-left: -456px;
+}
+
+.desc_piece--content {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  width: 600px;
+  margin-left: -346px;
+}
+
+.desc_piece--heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.desc_piece--text {
+  font-size: .9375rem;
+  line-height: 1.1333;
+}
+
+.desc_piece--incitement {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.1786;
+  margin-top: 1rem;
+  color: var(--color-cherry);
+}
+
+.desc_piece--triforce {
+  display: none;
+}
+
+.desc_piece--triangle1 {
+  font-size: 2.5rem;
+  top: 230px;
+  left: 50%;
+  margin-left: -520px;
+}
+
+.desc_piece--triangle2 {
+  font-size: 3.5rem;
+  top: 374px;
+  left: 50%;
+  margin-left: -240px;
+}
+
+.desc_piece--triangle3 {
+  font-size: 7rem;
+  z-index: -1;
+  top: 180px;
+  left: 50%;
+  margin-left: 108px;
+}
+
+.desc_piece--triangle4 {
+  font-size: 7rem;
+  top: 332px;
+  left: 50%;
+  margin-left: 254px;
+}
+
+@media (--viewport-under-60) {
+  .desc_piece {
+    height: 614px;
+    margin-top: 72px;
+    padding-top: 0;
+  }
+
+  .desc_piece--creeping_line {
+    font-size: 4.75rem;
+    top: 0;
+    left: 50%;
+    display: inline-block;
+    width: 290px;
+    margin-left: -144px;
+
+    & .creeping_line--content {
+      font-size: .75rem;
+      line-height: 1.1667;
+      text-align: center;
+    }
+  }
+
+  .desc_piece--content {
+    top: 150px;
+    width: 288px;
+    margin-left: -144px;
+    text-align: center;
+  }
+
+  .desc_piece--triforce {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    display: block;
+    width: 160px;
+    margin-left: -80px;
+  }
+
+  .desc_piece--pointer {
+    top: 84px;
+    width: 50px;
+    margin-left: -25px;
+  }
+
+  .desc_piece--heading {
+    font-size: 1.75rem;
+  }
+
+  .desc_piece--text {
+    font-size: .8125em;
+    line-height: 1.1538;
+  }
+
+  .desc_piece--incitement {
+    font-size: 1.3125rem;
+    line-height: 1.1905;
+    margin-top: 64px;
+  }
+
+  .desc_piece--triangle1 {
+    font-size: 1.75em;
+    top: 490px;
+    margin-left: -124px;
+  }
+
+  .desc_piece--triangle3 {
+    top: 395px;
+    margin-left: -100px;
+  }
+
+  .desc_piece--triangle4 {
+    font-size: 4.375em;
+    top: 514px;
+    margin-left: 30px;
+  }
+
+  .desc_piece--heading_triangle,
+  .desc_piece--triangle2 {
+    display: none;
+  }
+
+}

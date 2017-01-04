@@ -2,11 +2,10 @@
 
 .stripe {
   line-height: 1;
-  position: relative;
+  position: absolute;
   z-index: 1;
   display: inline-block;
   height: 1em;
-  margin: 0 0.5774em;
 
   &::before,
   &::after {
@@ -29,10 +28,6 @@
   &::after {
     right: -0.5774em;
   }
-}
-
-.stripe-size-xxl {
-  font-size: 14em;
 }
 
 .stripe-inverse-right {

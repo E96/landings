@@ -16,6 +16,7 @@
     "url": "https://github.com/E96/onedaysale-landing.git"
   },
   "dependencies": {
+    "Peppermint": "git+https://github.com/wilddeer/Peppermint.git",
     "classnames": "^2.2.5",
     "normalize.css": "^5.0.0",
     "ramda": "^0.22.1",

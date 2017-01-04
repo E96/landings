@@ -1,34 +1,29 @@
+@import '../../constants.css';
+
 .tile {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .tile-quart {
 
   & .tile--piece {
-    flex: 0 1 25%;
+    flex: 0 1 196px;
   }
 }
 
 .tile--piece {
   position: relative;
-  height: 4.75rem;
+  height: 76px;
+  margin-top: -1px;
+  margin-left: -1px;
   border: 1px solid #dfdfdf;
-  border-top-width: 0;
-  border-left-width: 0;
   background-color: #fff;
 
   &:hover,
   &:active {
     opacity: .8;
-  }
-
-  &:nth-child(4n+1) {
-    border-left-width: 1px;
-  }
-
-  &:nth-child(-n+4) {
-    border-top-width: 1px;
   }
 
   &-enter {
@@ -108,4 +103,10 @@
   max-width: 100%;
   max-height: 100%;
   margin: auto;
+}
+
+@media (--viewport-under-60) {
+  .tile {
+    justify-content: center;
+  }
 }

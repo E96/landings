@@ -1,0 +1,131 @@
+@import '../../constants.css';
+
+.take_part_piece {
+  position: relative;
+  height: 18.875rem;
+}
+
+.take_part_piece--background_stripe {
+  display: none;
+}
+
+.take_part_piece--badge_triangle {
+  font-size: 18.875rem;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  margin-left: -518px;
+}
+
+.take_part_piece--badge_text {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.2222;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -448px;
+  white-space: nowrap;
+  color: var(--color-white);
+}
+
+.take_part_piece--desc {
+  font-size: .9375rem;
+  font-weight: 500;
+  line-height: 1.2;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -150px;
+}
+
+.take_part_piece--form {
+  position: absolute;
+  top: 128px;
+  left: 50%;
+  width: 930px;
+  margin-left: -448px;
+}
+
+.take_part_piece--triangle1 {
+  font-size: 2.5em;
+  top: -38px;
+  left: 50%;
+  margin-left: -24px;
+}
+
+.take_part_piece--triangle2 {
+  font-size: 2.5em;
+  top: 226px;
+  left: 50%;
+  margin-left: -478px;
+}
+
+.take_part_piece--triangle3 {
+  font-size: 2.5em;
+  top: 226px;
+  left: 50%;
+  margin-left: -176px;
+}
+
+@media (--viewport-under-60) {
+  .take_part_piece {
+    height: 30.25rem;
+  }
+
+  .take_part_piece--background_stripe {
+    display: block;
+    font-size: 30.25rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    width: 340px;
+    margin-left: -170px;
+  }
+
+  .take_part_piece--badge_text {
+    font-size: 1.125em;
+    line-height: 1.2222;
+    top: 20px;
+    width: 288px;
+    margin-left: -144px;
+    text-align: center;
+  }
+
+  .take_part_piece--desc {
+    font-size: .8125em;
+    line-height: 1.2308;
+    top: 96px;
+    width: 288px;
+    margin-left: -144px;
+    text-align: center;
+    color: #ffffff9a;
+  }
+
+  .take_part_piece--form {
+    top: 206px;
+    width: 288px;
+    margin-left: -144px;
+  }
+
+  .take_part_piece--triangle1 {
+    top: -24px;
+    margin-left: -154px;
+  }
+
+  .take_part_piece--triangle3 {
+    top: 520px;
+    margin-left: -110px;
+  }
+
+  .take_part_piece--triangle2 {
+    font-size: 4rem;
+    top: 456px;
+    margin-left: 0;
+  }
+
+  .take_part_piece--badge_triangle {
+    display: none;
+  }
+}

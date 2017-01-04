@@ -1,0 +1,86 @@
+@import '../../constants.css';
+
+.countdown_piece {
+  position: relative;
+  height: 14rem;
+}
+
+.countdown_piece--background_stripe {
+  font-size: 14rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 45rem;
+  margin-left: -17.25rem;
+}
+
+.countdown_piece--band {
+  font-size: 2.625rem;
+  position: absolute;
+  top: 2.25rem;
+  left: 50%;
+  width: 14.25rem;
+  margin-left: -29.625rem;
+  text-align: right;
+}
+
+.countdown_piece--band_text {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 2.3333;
+  width: 100%;
+  padding-right: .5em;
+  white-space: nowrap;
+}
+
+.countdown_piece--counter {
+  position: absolute;
+  z-index: 1;
+  top: 2.75rem;
+  left: 50%;
+  margin-left: -16rem;
+  color: var(--color-white);
+}
+
+.countdown_piece--triangle1 {
+  font-size: 2.5rem;
+  position: absolute;
+  z-index: 60;
+  top: 148px;
+  left: 50%;
+  margin-left: 460px;
+}
+
+@media (--viewport-under-60) {
+  .countdown_piece {
+    height: 6.875rem;
+  }
+
+  .countdown_piece--background_stripe {
+    font-size: 6.875rem;
+    width: 300px;
+    margin-left: -134px;
+  }
+
+  .countdown_piece--counter {
+    top: 28px;
+    margin-left: -120px;
+  }
+
+  .countdown_piece--band {
+    font-size: 1.625em;
+    top: -16px;
+    width: 116px;
+    margin-left: -154px;
+  }
+
+  .countdown_piece--band_text {
+    font-size: .8125rem;
+    line-height: 2;
+    width: 116px;
+  }
+
+  .countdown_piece--triangle1 {
+    display: none;
+  }
+}
