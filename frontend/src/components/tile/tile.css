@@ -86,11 +86,8 @@
     background-color: #009589;
   }
 
-  &-citylink {
-
-    & .tile--img {
-      height: 45%;
-    }
+  &-ardi {
+    background-color: #D42030;
   }
 }
 
