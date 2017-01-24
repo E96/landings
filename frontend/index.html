@@ -74,10 +74,28 @@
                 <fieldset class="form--fieldset form--fieldset-borderless form--fieldset-sign_up">
                   <input class="form--input form--input-name" type="text" name="name" placeholder="Имя" />
                   <input class="form--input form--input-email" type="email" name="email" placeholder="Почта" />
+                  <label for="mnogoru" id="mnogoru-label"><input type="checkbox" id="mnogoru"> Я хочу вступить в Клуб Много.ру* и получать призы</label>
                 </fieldset>
                 <button class="button button-color-pink">Подписаться</button>
               </form>
             </div>
+            <style>
+              #mnogoru-label {
+                position: absolute;
+                left: 22px;
+                bottom: -25px;
+                font-size: .9375rem;
+                font-weight: 500;
+              }
+              @media screen and (max-width:60rem){
+                #mnogoru-label {
+                  position: relative;
+                  left: 0;
+                  top: 0;
+                  font-size: .8525rem;
+                }
+              }
+            </style>
             <script type="text/javascript">
               function sendClientForm() {
                 directCrm('identify', {
@@ -87,9 +105,17 @@
                     identity: document.forms[0]["email"].value
                   },
                   data: {
-                    firstName: document.forms[0]["name"].value
+                    firstName: document.forms[0]["name"].value,
+                    mnogoru: document.forms[0]["mnogoru"].checked ? '1' : '0',
+                    subscriptions: [
+                      {
+                        pointOfContact: 'Email',
+                        isSubscribed: true,
+                        valueByDefault: false 
+                      }
+                    ]
                   }
-                })
+                });
                 alert("Спасибо, мы обязательно пришлём Вам письмо!");
                 return false;
               };
@@ -400,9 +426,16 @@
                   },
                   data: {
                     company: document.forms[1]["name"].value,
-                    mobilePhone: document.forms[1]["phone"].value
+                    mobilePhone: document.forms[1]["phone"].value,
+                    subscriptions: [
+                      {
+                        pointOfContact: 'Email',
+                        isSubscribed: true,
+                        valueByDefault: false 
+                      }
+                    ]
                   }
-                })
+                });
                 alert("Спасибо, мы обязательно с Вами свяжемся!");
                 return false;
               };
