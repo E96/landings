@@ -7,6 +7,180 @@
   <meta name="description" content="Киберпонедельник 2017 — крупнейшая распродажа зимы. Получайте скидки до 90% на лучшие товары в крупнейших компаниях и сервисах." />
   <link rel="stylesheet" href="static/bundle.css" />
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M7XCHWM');</script>
+    <style>
+        #slideout_closable091014 {
+            position: fixed;
+            top: 168px;
+            right: 0;
+            -webkit-transition-duration: 0.3s;
+            -moz-transition-duration: 0.3s;
+            -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            z-index: 55;
+            display: none;
+        }
+        #slideout_closable_inner091014 {
+            position: fixed;
+            top: 134px;
+            right: -347px; /*Ширина открытого ярлыка*/
+            -webkit-transition-duration: 0.3s;
+            -moz-transition-duration: 0.3s;
+            -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+        .slideout_closable_box {
+            text-align: center;
+
+        }
+        .slideout_closable_box-item {
+            vertical-align: top;
+            margin: -12px 0 0;
+            position: relative;
+        }
+        .slideout_closable_box-item_title {
+            color: #d11769;
+            font: 23px/1 'Roboto Slab';
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .slideout_closable_box-item_text {
+            color: #262626;
+            font: 12px/16px 'Roboto Slab';
+        }
+        .slideout_closable_box-item_text p {
+            margin-bottom: 17px;
+        }
+        a.slideout_closable_box-item_link {
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 17px;
+            height: 28px;
+            color: #d11769;
+            font: 400 10px/30px 'Roboto Slab';
+            text-decoration: none;
+            border: 1px solid #d11769;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        a.slideout_closable_box-item_link:hover {
+            color: white;
+            background: #d11769;
+            border: 1px solid #d11769;
+        }
+        a.slideout_closable_agree {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 5px;
+            color: #d11769;
+            font: 10px/1 'Roboto Slab';
+            text-decoration: none;
+            border-bottom: 1px dashed #d11769;
+        }
+        span.flag_pobeditel {
+            position: absolute;
+            right: -5px;
+            bottom: 0px;
+            width: 41px;
+            height: 49px;
+            background: url(http://mnogo.ru/enterpics/enter2333/pic777_145914.png) 0 0 no-repeat;
+            z-index: 1;
+            display: none;
+        }
+
+        .gameClick_shadow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 77;
+            background: rgba(0,0,0,0.7);
+            display: none;
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        .gameClick_agree22 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 77;
+            display: none;
+        }
+        .gameClick_agree22 table, .gameClick_agree22 table td {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .gameClick_agree-win {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 450px;
+            background: white;
+        }
+        a.gameClick_agree-win-closed {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 32px;
+            height: 32px;
+            background: url(http://mnogo.ru/enterpics/enter2276/pic777_142844.png) center 50% no-repeat;
+        }
+        .gameClick_agree-win-wrap {
+            text-align: left;
+        }
+        .gameClick_agree-win-title {
+            padding: 20px 40px;
+            font: 300 21px/1 'Roboto', sans-serif;
+            color: #1b1b1b;
+            background: #f7f7f7;
+            border-bottom: 1px solid #d9d9d9;
+        }
+        .gameClick_agree-win-text {
+            padding: 40px;
+            color: #545454;
+            font: 12px/16px 'Open Sans';
+        }
+        .gameClick_agree-win-text ul, .gameClick_agree-win-text ul li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .gameClick_agree-win-text ul li {
+            margin: 0 0 10px 20px;
+            list-style-type: decimal;
+            line-height: 1.2;
+        }
+
+
+        .slideout_closable_detals {
+            position: absolute;
+            top: -55px;
+            font-size: 0;
+            right: -20px;
+        }
+        .slideout_closable_detals a {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 10px;
+        }
+        a.slideout_closable_turn {
+            width: 49px;
+            height: 10px;
+            background: url(http://mnogo.ru/enterpics/enter2334/pic777_145918.png) 0 0 no-repeat;
+        }
+        a.slideout_closable_closed {
+            width: 46px;
+            height: 9px;
+            background: url(http://mnogo.ru/enterpics/enter2334/pic777_145931.png) 0 0 no-repeat;
+        }
+
+    </style>
 </head>
 <body class="root--body">
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7XCHWM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -501,6 +675,18 @@
     </div>
   </div>
 
+  <div class="tat_index_only" id="slideout_closable091014" style="z-index: 999;">
+      <img src="static/mnogo-badge.png" style="cursor: pointer" class="bednii_yerik">
+      <div id="slideout_closable_inner091014" class="slideout_closable_box">
+          <div class="slideout_closable_box-item">
+              <img id="Image-Maps-Com-image-maps-2015-12-24-054450" src="static/mnogo-badge-opened.png" border="0" width="347" height="306" orgWidth="347" orgHeight="306" usemap="#image-maps-2015-12-24-054450" alt="" />
+              <map name="image-maps-2015-12-24-054450" id="ImageMapsCom-image-maps-2015-12-24-054450">
+                  <area shape="rect" alt="" title="" coords="15,12,331,293" href="http://www.mnogo.ru/new_anketa/name.html?range=1153" target="_blank" />
+              </map>
+          </div>
+      </div>
+  </div>
+
   <script src="static/bundle.js"></script>
   <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41573534 = new Ya.Metrika({ id:41573534, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41573534" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <script type="text/javascript"> var serviceDomain = 'tracker.directcrm.ru';(function (window, document, script, url, objectName) { window[objectName] = window[objectName] || function () { (window[objectName].Queue = window[objectName].Queue || []).push(arguments); }, a = document.createElement(script), m = document.getElementsByTagName(script)[0]; a.async = 1; a.src = url + '?v=' + Math.random(); m.parentNode.insertBefore(a, m);})(window, document, 'script', 'https://' + serviceDomain + '/scripts/v1/tracker.js', 'directCrm');
@@ -511,5 +697,66 @@
         projectDomain: 'Onedaysale-services.directcrm.ru',
         serviceDomain: serviceDomain
     });</script>
+  <script src="static/jquery-3.1.1.slim.min.js"></script>
+  <script src="static/js.cookie.js"></script>
+  <script type="text/javascript">
+      $(function() {
+          var anchor = window.location.hash;
+          if (anchor == '#shishki') {
+              $('.bednii_yerik').data('show', true);
+              $('#slideout_closable091014').css({'right': '347px'});
+              $('.slideout_closable_box').css({'right': '0'});
+          };
+
+
+          $('.bednii_yerik').click(function() {
+              if ( !$('.bednii_yerik').data('show') ) {
+                  $('.bednii_yerik').data('show', true);
+                  $('#slideout_closable091014').css({'right': '347px'});
+                  $('.slideout_closable_box').css({'right': '0'});
+              }
+              else {
+                  $('.bednii_yerik').data('show', false);
+                  $('#slideout_closable091014').css({'right': '0px'});
+                  $('.slideout_closable_box').css({'right': '-347px'});
+              };
+          });
+
+          $('.slideout_closable_box-item_link').click(function() {
+              $('.bednii_yerik').data('show', false);
+              $('#slideout_closable091014').css({'right': '0px'});
+              $('.slideout_closable_box').css({'right': '-347px'});
+          });
+
+
+          $('.slideout_closable_agree').click(function() {
+              $('.gameClick_shadow-agree, .gameClick_agree22').show();
+          });
+
+          $('.gameClick_agree-win-closed').click(function() {
+              $('.gameClick_shadow-agree, .gameClick_agree22').hide();
+          });
+
+
+          $('.slideout_closable_closed').click(function() {
+              $('#slideout_closable091014').hide();
+              var date = new Date();
+              date.setHours(0);
+              date.setMinutes(0);
+              date.setSeconds(0);
+              date.setDate(date.getDate()+1);
+              Cookies.set("gameClick", 1, {path: '/', expires: date});
+          });
+
+          if(!Cookies.get('gameClick')) {
+              $('#slideout_closable091014').show();
+          }
+          else {
+              $('#slideout_closable091014').hide();
+          }
+
+
+      });
+  </script>
 </body>
 </html>
