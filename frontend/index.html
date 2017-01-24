@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="static/bundle.css" />
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M7XCHWM');</script>
     <style>
+        @media screen and (max-width:60rem) {
+            .root--body div#slideout_closable091014.tat_index_only {
+                display: none;
+            }
+        }
+        .hidden {
+            display: none;
+        }
         #slideout_closable091014 {
             position: fixed;
             top: 168px;
@@ -17,7 +25,7 @@
             -o-transition-duration: 0.3s;
             transition-duration: 0.3s;
             z-index: 55;
-            display: none;
+            /*display: none;*/
         }
         #slideout_closable_inner091014 {
             position: fixed;
@@ -181,6 +189,23 @@
         }
 
     </style>
+    <style>
+        #mnogoru-label {
+            position: absolute;
+            left: 22px;
+            bottom: -25px;
+            font-size: .9375rem;
+            font-weight: 500;
+        }
+        @media screen and (max-width:60rem){
+            #mnogoru-label {
+                position: relative;
+                left: 0;
+                top: 0;
+                font-size: .8525rem;
+            }
+        }
+    </style>
 </head>
 <body class="root--body">
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7XCHWM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -253,23 +278,6 @@
                 <button class="button button-color-pink">Подписаться</button>
               </form>
             </div>
-            <style>
-              #mnogoru-label {
-                position: absolute;
-                left: 22px;
-                bottom: -25px;
-                font-size: .9375rem;
-                font-weight: 500;
-              }
-              @media screen and (max-width:60rem){
-                #mnogoru-label {
-                  position: relative;
-                  left: 0;
-                  top: 0;
-                  font-size: .8525rem;
-                }
-              }
-            </style>
             <script type="text/javascript">
               function sendClientForm() {
                 directCrm('identify', {
@@ -546,7 +554,7 @@
               <a class="tile--piece" href="http://lustron.ru/rasprodazhi/kiberponedelnik/">
                 <img class="tile--img" src="static/lustron.png" />
               </a>
-              <a class="tile--piece" href="http://stroylandiya.ru/actions/?type=online">
+              <a class="tile--piece" href="http://stroylandiya.ru/action/cyberponedelnik/?utm_source=sale&utm_medium=onedaysale&utm_campaign=logo&utm_content=glavnaya">
                 <img class="tile--img" src="static/stroylandia.png" />
               </a>
               <a class="tile--piece" href="http://usbru.ru/catalog/">
@@ -675,7 +683,7 @@
     </div>
   </div>
 
-  <div class="tat_index_only" id="slideout_closable091014" style="z-index: 999;">
+  <div class="tat_index_only hidden" id="slideout_closable091014" style="z-index: 999;">
       <img src="static/mnogo-badge.png" style="cursor: pointer" class="bednii_yerik">
       <div id="slideout_closable_inner091014" class="slideout_closable_box">
           <div class="slideout_closable_box-item">
@@ -730,16 +738,16 @@
 
 
           $('.slideout_closable_agree').click(function() {
-              $('.gameClick_shadow-agree, .gameClick_agree22').show();
+              $('.gameClick_shadow-agree, .gameClick_agree22').removeClass('hidden');
           });
 
           $('.gameClick_agree-win-closed').click(function() {
-              $('.gameClick_shadow-agree, .gameClick_agree22').hide();
+              $('.gameClick_shadow-agree, .gameClick_agree22').addClass('hidden');
           });
 
 
           $('.slideout_closable_closed').click(function() {
-              $('#slideout_closable091014').hide();
+              $('#slideout_closable091014').addClass('hidden');
               var date = new Date();
               date.setHours(0);
               date.setMinutes(0);
@@ -749,10 +757,10 @@
           });
 
           if(!Cookies.get('gameClick')) {
-              $('#slideout_closable091014').show();
+              $('#slideout_closable091014').removeClass('hidden');
           }
           else {
-              $('#slideout_closable091014').hide();
+              $('#slideout_closable091014').addClass('hidden');
           }
 
 
