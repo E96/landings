@@ -1,6 +1,6 @@
 export const COUNTDOWN_DIALS_PAD = '00'
 export const ROOT_FONT_SIZE = 16
-export const START_DATE = new Date('January 29, 2017 00:00:00')
+export const START_DATE = new Date('January 29, 2017 00:00:00 GMT+0300')
 
 export const TOP_LAYER_TRIANGLES = [
   // { color: 'pink', size: 40, top: 110, left: 838 },
