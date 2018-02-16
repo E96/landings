@@ -1,0 +1,36 @@
+@import '../../constants.css';
+
+.button {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  transition: background-color .2s;
+  white-space: nowrap;
+  color: #fff;
+  border-width: 0;
+
+  &:hover,
+  &:active {
+    transition-duration: .05s;
+  }
+}
+
+.button-color-pink {
+  background-color: var(--color-pink);
+
+  &:hover,
+  &:active {
+    background-color: var(--color-purple);
+  }
+}
+
+.button-color-turquoise {
+  background-color: var(--color-turquoise);
+
+  &:hover,
+  &:active {
+    background-color: var(--color-pink);
+  }
+}

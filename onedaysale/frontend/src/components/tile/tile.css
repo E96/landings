@@ -1,0 +1,109 @@
+@import '../../constants.css';
+
+.tile {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tile-quart {
+
+  & .tile--piece {
+    flex: 0 1 196px;
+  }
+}
+
+.tile--piece {
+  position: relative;
+  height: 76px;
+  margin-top: -1px;
+  margin-left: -1px;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+
+  &:hover,
+  &:active {
+    opacity: .8;
+  }
+
+  &-enter {
+    background-color: #000;
+
+    & .tile--img {
+      height: 80%;
+    }
+  }
+
+  &-kupivip {
+    background-color: #652d8a;
+
+    & .tile--img {
+      height: 80%;
+    }
+  }
+
+  &-sportmaster {
+    background-color: #2d4c9b;
+
+    & .tile--img {
+      height: 70%;
+    }
+  }
+
+  &-mediamarkt {
+    background-color: #e2007a;
+  }
+
+  &-m_video {
+    background-color: #ff0b07;
+  }
+
+  &-220_volt {
+    background-color: #fff203;
+  }
+
+  &-upnrun {
+    background-color: #000;
+  }
+
+  &-street_beat {
+    background-color: #003a46;
+
+    & .tile--img {
+      height: 80%;
+    }
+  }
+
+  &-sony_centre {
+    background-color: #000;
+  }
+
+  &-re_store {
+    background-color: #f5f5f5;
+  }
+
+  &-adamas {
+    background-color: #009589;
+  }
+
+  &-ardi {
+    background-color: #D42030;
+  }
+}
+
+.tile--img {
+  position: absolute;
+  top: -999px;
+  right: -999px;
+  bottom: -999px;
+  left: -999px;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+@media (--viewport-under-60) {
+  .tile {
+    justify-content: center;
+  }
+}

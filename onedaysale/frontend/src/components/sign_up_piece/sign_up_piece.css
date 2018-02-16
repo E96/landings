@@ -1,0 +1,102 @@
+@import '../../constants.css';
+
+.sign_up_piece {
+  position: relative;
+  height: 14rem;
+}
+
+.sign_up_piece--heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: .9643;
+  position: absolute;
+  top: 2.5rem;
+  left: 50%;
+  width: 120px;
+  margin-left: -27.25rem;
+}
+
+.sign_up_piece--incitement {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.2;
+  position: absolute;
+  top: 2.75rem;
+  left: 50%;
+  width: 240px;
+  margin-left: -13.25em;
+}
+
+.sign_up_piece--form {
+  font-size: 1rem;
+  position: absolute;
+  top: 8.125rem;
+  left: 50%;
+  width: 55.25rem;
+  margin-left: -25.125rem;
+}
+
+.sign_up_piece--background_stripe {
+  font-size: 14rem;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  width: 57.125rem;
+  margin-left: -25.5rem;
+}
+
+.sign_up_piece--triangle1 {
+  font-size: 4.75em;
+  top: -30px;
+  left: 50%;
+  margin-left: 306px;
+}
+
+.sign_up_piece--triangle2 {
+  font-size: 2.5em;
+  top: 112px;
+  left: 50%;
+  margin-left: -560px;
+}
+
+@media (--viewport-under-60) {
+  .sign_up_piece {
+    height: 18.875rem;
+  }
+
+  .sign_up_piece--background_stripe {
+    font-size: 25rem;
+    width: 320px;
+    margin-left: -160px;
+  }
+
+  .sign_up_piece--heading {
+    font-size: 1.125rem;
+    top: 20px;
+    width: 240px;
+    margin-left: -120px;
+    text-align: center;
+  }
+
+  .sign_up_piece--incitement {
+    font-size: .8125rem;
+    line-height: 1.2308;
+    top: 50px;
+    width: 288px;
+    margin-left: -144px;
+    text-align: center;
+    color: #0000009a;
+  }
+
+  .sign_up_piece--form {
+    top: 110px;
+    width: 288px;
+    margin-left: -144px;
+  }
+
+  .sign_up_piece--triangle1,
+  .sign_up_piece--triangle2 {
+    display: none;
+  }
+}

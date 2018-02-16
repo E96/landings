@@ -1,0 +1,285 @@
+@import '../../constants.css';
+
+.banner_piece {
+  position: relative;
+  height: 30.5rem;
+  pointer-events: none;
+}
+
+.banner_piece--background_stripe {
+  font-size: 30.5rem;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  width: 628px;
+  margin-left: -318px;
+}
+
+.banner_piece--time_triangle {
+  font-size: 18.875em;
+  z-index: 10;
+  top: 70px;
+  left: 50%;
+  margin-left: -538px;
+}
+
+.banner_piece--time {
+  font-size: 1.75em;
+  font-weight: 700;
+  line-height: 1.0357;
+  position: absolute;
+  z-index: 10;
+  top: 88px;
+  left: 50%;
+  margin-left: -476px;
+  color: var(--color-white);
+}
+
+.banner_piece--extra {
+  font-size: .9375em;
+  position: absolute;
+  z-index: 10;
+  top: 152px;
+  left: 50%;
+  margin-left: -464px;
+  color: var(--color-amaranth-pink);
+}
+
+.banner_piece--heading_triangle {
+  font-size: 22.5rem;
+  z-index: 20;
+  top: 170px;
+  left: 50%;
+  margin-left: -304px;
+}
+
+.banner_piece--heading {
+  font-size: 2.375em;
+  font-weight: 700;
+  line-height: .8947;
+  position: absolute;
+  z-index: 20;
+  top: 192px;
+  left: 50%;
+  margin-left: -218px;
+  color: var(--color-white);
+}
+
+.banner_piece--triforce1 {
+  position: absolute;
+  z-index: 10;
+  top: 290px;
+  left: 50%;
+  margin-left: 304px;
+}
+
+.banner_piece--triforce2 {
+  position: absolute;
+  z-index: 10;
+  top: 198px;
+  left: 50%;
+  margin-left: -380px;
+}
+
+.banner_piece--triangle1 {
+  font-size: 2.5rem;
+  top: 82px;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.banner_piece--triangle2 {
+  font-size: 6.875rem;
+  top: 82px;
+  left: 50%;
+  margin-left: 448px;
+}
+
+.banner_piece--triangle3 {
+  font-size: 2.5rem;
+  top: 380px;
+  left: 50%;
+  margin-left: -572px;
+}
+
+.banner_piece--item {
+  position: absolute;
+
+  &-bulb {
+    z-index: 50;
+    top: 132px;
+    left: 50%;
+    margin-left: 216px;
+  }
+
+  &-dress {
+    z-index: 30;
+    top: -40px;
+    left: 50%;
+    margin-left: 22px;
+  }
+
+  &-gamepad {
+    z-index: 50;
+    top: 256px;
+    left: 50%;
+    margin-left: 348px;
+  }
+
+  &-headphones {
+    z-index: 50;
+    top: 386px;
+    left: 50%;
+    margin-left: -384px;
+  }
+
+  &-laptop {
+    z-index: 50;
+    top: 334px;
+    left: 50%;
+    margin-left: 138px;
+  }
+
+  &-millennium_falcon {
+    z-index: 50;
+    top: 338px;
+    left: 50%;
+    margin-left: -220px;
+  }
+
+  &-mixer {
+    z-index: 50;
+    top: 206px;
+    left: 50%;
+    margin-left: 46px;
+  }
+
+  &-pillow {
+    z-index: 30;
+    top: 220px;
+    left: 50%;
+    margin-left: -542px;
+  }
+
+  &-ring {
+    z-index: 50;
+    top: 32px;
+    left: 50%;
+    margin-left: -230px;
+  }
+
+  &-stool {
+    z-index: 30;
+    top: -28px;
+    left: 50%;
+    margin-left: 314px;
+  }
+
+  &-tv {
+    z-index: 10;
+    top: 106px;
+    left: 50%;
+    margin-left: -94px;
+  }
+}
+
+@media (--viewport-under-60) {
+  .banner_piece {
+    height: 15.25rem;
+  }
+
+  .banner_piece--background_stripe {
+    font-size: 15.25rem;
+    width: 214px;
+    margin-left: -107px;
+  }
+
+  .banner_piece--time_triangle {
+    font-size: 11rem;
+    top: 22px;
+    margin-left: -216px;
+  }
+
+  .banner_piece--time {
+    font-size: .8125em;
+    line-height: 1.2308;
+    top: 30px;
+    margin-left: -150px;
+  }
+
+  .banner_piece--heading_triangle {
+    font-size: 13.25em;
+    top: 66px;
+    margin-left: -160px;
+  }
+
+  .banner_piece--heading {
+    font-size: 1.3125rem;
+    line-height: .8571;
+    top: 80px;
+    margin-left: -110px;
+  }
+
+  .banner_piece--triangle1 {
+    top: -20px;
+    margin-left: 88px;
+  }
+
+  .banner_piece--extra,
+  .banner_piece--triforce1,
+  .banner_piece--triforce2,
+  .banner_piece--triangle2,
+  .banner_piece--triangle3 {
+    display: none;
+  }
+
+  .banner_piece--item {
+    position: absolute;
+
+    &-bulb {
+      top: 140px;
+      width: 44px;
+      margin-left: 90px;
+    }
+
+    &-dress {
+      top: -28px;
+      width: 164px;
+      margin-left: 10px;
+    }
+
+    &-gamepad {
+      top: 28px;
+      width: 84px;
+      margin-left: 106px;
+    }
+
+    &-headphones {
+      top: 200px;
+      width: 80px;
+      margin-left: -120px;
+      transform: rotate(-70deg);
+    }
+
+    &-laptop {
+      top: 172px;
+      width: 165px;
+      margin-left: 34px;
+    }
+
+    &-millennium_falcon {
+      top: 120px;
+      width: 104px;
+      margin-left: -70px;
+    }
+
+    &-mixer,
+    &-pillow,
+    &-ring,
+    &-stool,
+    &-tv {
+      display: none;
+    }
+  }
+}

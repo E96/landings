@@ -1,0 +1,100 @@
+@import '../../constants.css';
+
+.stripe {
+  line-height: 1;
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  height: 1em;
+
+  &::before,
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 0.5774em solid transparent;
+    border-top-width: 1em;
+    border-bottom-width: 0;
+  }
+
+  &::before {
+    left: -0.5774em;
+  }
+
+  &::after {
+    right: -0.5774em;
+  }
+}
+
+.stripe-inverse-right {
+  &::after {
+    border-top-width: 0;
+    border-bottom-width: 1em;
+  }
+}
+
+.stripe-inverse-left {
+  &::before {
+    border-top-width: 0;
+    border-bottom-width: 1em;
+  }
+}
+
+.stripe-color-black {
+  color: var(--color-white);
+  background-color: var(--color-black);
+
+  &::before,
+  &::after {
+    border-top-color: var(--color-black);
+    border-bottom-color: var(--color-black);
+  }
+}
+
+.stripe-color-pink {
+  color: var(--color-white);
+  background-color: var(--color-pink);
+
+  &::before,
+  &::after {
+    border-top-color: var(--color-pink);
+    border-bottom-color: var(--color-pink);
+  }
+}
+
+.stripe-color-purple {
+  color: var(--color-white);
+  background-color: var(--color-purple);
+
+  &::before,
+  &::after {
+    border-top-color: var(--color-purple);
+    border-bottom-color: var(--color-purple);
+  }
+}
+
+.stripe-color-smoke {
+  color: var(--color-black);
+  background-color: var(--color-smoke);
+
+  &::before,
+  &::after {
+    border-top-color: var(--color-smoke);
+    border-bottom-color: var(--color-smoke);
+  }
+}
+
+.stripe-color-yellow {
+  color: var(--color-black);
+  background-color: var(--color-yellow);
+
+  &::before,
+  &::after {
+    border-top-color: var(--color-yellow);
+    border-bottom-color: var(--color-yellow);
+  }
+}

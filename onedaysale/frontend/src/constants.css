@@ -1,0 +1,28 @@
+@custom-media --viewport-over-60 screen and (min-width: 60rem);
+@custom-media --viewport-under-60 screen and (max-width: 60rem);
+
+:root {
+  --font-default: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+
+  --color-amaranth-pink: #f79cc0;
+  --color-blue: #008aff;
+  --color-black: #000;
+  --color-cherry: #c00062;
+  --color-grey: #999;
+  --color-pink: #ef3981;
+  --color-purple: #54205f;
+  --color-smoke: #f3f3f3;
+  --color-turquoise: #1fb9ae;
+  --color-white: #fff;
+  --color-yellow: #f4e831;
+  --color-zazaza: #3a3a3a;
+
+  --clearfix: {
+    &::before,
+    &::after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+  };
+}

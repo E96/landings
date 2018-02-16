@@ -1,0 +1,94 @@
+@import '../../constants.css';
+
+.parties_piece {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 90px;
+}
+
+.parties_piece--heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: .9643;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  margin-left: -238px;
+}
+
+.parties_piece--badge_triangle {
+  font-size: 15.25rem;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  margin-left: -540px;
+}
+
+.parties_piece--badge_count {
+  font-size: 4.875rem;
+  font-weight: 700;
+  line-height: 1;
+  position: absolute;
+  z-index: 40;
+  top: 8px;
+  left: 50%;
+  margin-left: -420px;
+  color: var(--color-white);
+}
+
+.parties_piece--badge_extra {
+  font-size: .875rem;
+  line-height: 1.1429;
+  position: absolute;
+  z-index: 40;
+  top: 22px;
+  left: 50%;
+  margin-left: -486px;
+  color: var(--color-white);
+}
+
+.parties_piece--tile {
+  max-width: 786px;
+  margin-left: 250px;
+}
+
+.parties_piece--triangle1 {
+  font-size: 2.5rem;
+  top: 406px;
+  left: 50%;
+  margin-left: -470px;
+}
+
+.parties_piece--triangle2 {
+  font-size: 4.375rem;
+  top: 700px;
+  left: 50%;
+  margin-left: 360px;
+}
+
+@media (--viewport-under-60) {
+  .parties_piece {
+    padding: 70px 0 40px;
+  }
+
+  .parties_piece--heading {
+    font-size: 1.125rem;
+    line-height: 1.2222;
+    top: 0;
+    width: 288px;
+    margin-left: -144px;
+    text-align: center;
+  }
+
+  .parties_piece--tile {
+    margin: 0 auto;
+  }
+
+  .parties_piece--badge_triangle,
+  .parties_piece--badge_count,
+  .parties_piece--badge_extra,
+  .parties_piece--triangle1,
+  .parties_piece--triangle2 {
+    display: none;
+  }
+}

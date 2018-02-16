@@ -1,0 +1,42 @@
+@import '../../constants.css';
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border: .5774em solid transparent;
+  border-top-width: 1em;
+}
+
+.triangle-blur {
+  filter: blur(5px);
+}
+
+.triangle-color-black {
+  border-top-color: var(--color-black);
+}
+
+.triangle-color-blue {
+  border-top-color: var(--color-blue);
+}
+
+.triangle-color-pink {
+  border-top-color: var(--color-pink);
+}
+
+.triangle-color-purple {
+  border-top-color: var(--color-purple);
+}
+
+.triangle-color-smoke {
+  border-top-color: var(--color-smoke);
+}
+
+.triangle-color-turquoise {
+  border-top-color: var(--color-turquoise);
+}
+
+.triangle-color-yellow {
+  border-top-color: var(--color-yellow);
+}

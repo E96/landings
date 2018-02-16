@@ -1,0 +1,89 @@
+@import '../../constants.css';
+
+* {
+  box-sizing: border-box;
+}
+
+.root {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  font-family: var(--font-default);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.root,
+.root--body {
+  height: 100%;
+}
+
+.root--body-no_hover,
+.root--body-no_hover * {
+  pointer-events: none !important;
+}
+
+.layout {
+  overflow: hidden;
+  width: 100%;
+}
+
+.layout--etui {
+  min-width: 20rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@media (--viewport-over-60) {
+  @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+    .pllx {
+      perspective: 1px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 100vh;
+    }
+
+    .pllx--section {
+      position: relative;
+      transform-style: preserve-3d;
+    }
+
+    .pllx--layer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+
+      &-main {
+        transform: translateZ(0);
+        pointer-events: auto;
+      }
+
+      &-minus-4 {
+        transform: translateZ(-.2px) scale(1.2);
+      }
+
+      &-minus-2 {
+        transform: translateZ(-.1px) scale(1.1);
+      }
+
+      &-minus-1 {
+        transform: translateZ(-.05px) scale(1.05);
+      }
+
+      &-plus-1 {
+        transform: translateZ(.05px) scale(.95);
+      }
+
+      &-plus-2 {
+        transform: translateZ(.1px) scale(.9);
+      }
+
+      &-plus-3 {
+        transform: translateZ(.15px) scale(.85);
+      }
+    }
+  }
+}

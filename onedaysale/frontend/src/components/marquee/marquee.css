@@ -1,0 +1,10 @@
+.marquee {
+  font-size: 2.25rem;
+}
+
+.marquee--content {
+  font-size: .8125rem;
+  line-height: 2.7692;
+  height: 100%;
+  padding: 0 1.2308em;
+}
