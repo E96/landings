@@ -1,0 +1,528 @@
+@font-face {
+  font-family: 'WhitneyBold';
+  src: url(fonts/Whitney-Bold-ProGkCy.otf);
+}
+@font-face {
+  font-family: 'WhitneyBook';
+  src: url(fonts/Whitney-Book-ProGkCy.otf);
+}
+@font-face {
+  font-family: 'WhitneyLight';
+  src: url(fonts/Whitney-Light-ProGkCy.otf);
+}
+@font-face {
+  font-family: 'WhitneyMedium';
+  src: url(fonts/Whitney-Medium-ProGkCy.otf);
+}
+@font-face {
+  font-family: 'WhitneySemibld';
+  src: url(fonts/Whitney-Semibld-ProGkCy.otf);
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'WhitneyMedium';
+  color: #333;
+}
+
+section {
+  padding: 30px 0 60px;
+  text-align: center;
+  position: relative;
+}
+
+p {
+  margin: 0;
+  font-family: 'WhitneyBook';
+  font-size: 18px;
+}
+
+a {
+  color: #00bfe7;
+  font-size: 18px;
+  font-family: 'WhitneyBook';
+}
+a:hover {
+  color: #1bd0f6;
+}
+
+.header {
+  height: 460px;
+  width: 100%;
+  display: table;
+  background-image: url('img/header-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+.header .center {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.logos {
+  max-width: 1200px;
+  height: 71px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  font-size: 0;
+  padding: 0 20px;
+}
+.logos > div {
+  display: inline-block;
+  height: inherit;
+  background-repeat: no-repeat;
+}
+.e96-logo {
+  width: 50%;
+  background-image: url('img/e-96-logo.svg');
+  background-position: left top;
+}
+.openbank-logo {
+  width: 50%;
+  background-image: url('img/openbank-logo.svg');
+  background-position: right top;
+}
+.scroll-down {
+  position: absolute;
+  top: -50px;
+  cursor: pointer;
+}
+
+
+h1 {
+  font-size: 50px;
+  letter-spacing: -1.7px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+h2 {
+  font-size: 36px;
+  letter-spacing: -1px;
+  font-family: 'WhitneyLight';
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 26px;
+  font-family: 'WhitneyBook';
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+h4 {
+  font-size: 22px;
+  font-family: 'WhitneyMedium';
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  letter-spacing: 0.3px;
+}
+.small {
+  font-size: 14px;
+}
+
+
+.text-white {
+  color: #fff;
+}
+.text-medium {
+  font-size: 30px;
+}
+.text-standard {
+  font-size: 20px;
+}
+.text-justify {
+  text-align: justify;
+}
+
+
+.buy-cheaper {
+  height: 528px;
+  text-align: center;
+}
+
+.row {
+  max-width: 950px;
+  margin: 40px auto 0;
+}
+.column {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+.column > div {
+  height: 140px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.column > div > img {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.button {
+  background-color: #00bfe7;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 6px;
+  border: 0;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-family: 'WhitneyMedium';
+  margin-top: 30px;
+}
+.button:hover {
+  background-color: #1bd0f6;
+  color: #fff;
+}
+
+
+.entertainment {
+  background-image: url('img/sec-3-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+.entertainment > .icons-fun {
+  max-width: 898px;
+  margin: 0 auto;
+  height: 311px;
+  background-image: url('img/icons-fun-category.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-bottom: 21px;
+  margin-top: 42px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+li {
+  display: inline-block;
+  margin-right: 40px;
+  color: #ccc;
+}
+li:hover {
+  color: #333;
+  cursor: pointer;
+}
+li:last-child {
+  margin-right: 0;
+}
+li.selected {
+  border-bottom: 3px solid #00bfe7;
+  color: #333;
+}
+
+#premiumContent, 
+#optimalContent,
+#basicContent {
+  text-align: left;
+}
+
+#optimalContent,
+#basicContent {
+  display: none;
+}
+
+.card {
+  display: inline-block;
+  width: 325px;
+}
+
+.card-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 60px;
+}
+
+.divider {
+  margin-bottom: 30px;
+}
+
+.card-order {
+  margin-top: 50px;
+}
+.card-order > div {
+  display: inline-block;
+  margin-left: 40px;
+  vertical-align: bottom;
+}
+.card-order > p {
+  display: inline-block;
+}
+.card-order > div > p {
+  font-size: 12px;
+  color: #999;
+  display: block;
+}
+
+.form {
+  padding: 0;
+  background-color: #f5f5f5;
+}
+.form > h2 {
+  position: relative;
+  top: 30px;
+}
+.form > iframe {
+  height: 850px;
+  width: 100%;
+}
+
+
+footer {
+  padding: 40px 0;
+  background: #fff;
+}
+footer a {
+  word-wrap: break-word;
+}
+footer > .content {
+  padding: 0 30px;
+}
+footer > .content > div {
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 0;
+}
+footer > .content p,
+footer > .content h2 {
+  padding: 0;
+}
+footer > .content > div > .logo-small {
+  width: 50%;
+  text-align: left;
+  display: inline-block;
+}
+footer > .content > div > .logo-small > div.bg {
+  background-image: url('img/logo-small-foo.svg');
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer > .content > div > .logo-small > p {
+  margin-top: 30px;
+}
+footer > .content > div > .phone {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  vertical-align: top;
+}
+footer > .content > div > .phone > h2 {
+  margin-bottom: 0;
+}
+footer ul {
+  list-style: disc;
+  padding-left: 40px;
+  margin: 0;
+}
+footer li {
+  font-size: 18px;
+  display: list-item;
+  font-family: 'WhitneyBook';
+  color: #333;
+  margin-bottom: 10px;
+}
+#detailedConditions {
+  margin: 20px 0;
+  display: none;
+}
+#detailedConditions p {
+  margin-bottom: 10px;
+}
+a.dynamic {
+  border-bottom: 1px dashed;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .e96-logo {
+    width: 30%;
+    background-size: contain;
+  }
+  .openbank-logo {
+    width: 50%;
+    margin-left: 20%;
+    background-size: contain;
+  }
+
+  h1, h2, p {
+    padding: 0 20px;
+  }
+
+  .row {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  .column {
+    display: block;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .card-info {
+    margin-left: 0;
+    width: 100%;
+  }
+  .card-order {
+    margin-top: 0;
+  }
+  .card-order > p {
+    display: block;
+  }
+  .card-order > div {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+  }
+  .card-order > div > a {
+    padding: 0 30px;
+  }
+  .card-order > div > p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  footer > .content > div > .logo-small > p {
+    margin-top: 30px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header h1, .header p {
+    text-align: left;
+  }
+  .scroll-down {
+    display: none;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: -1px;
+  }
+  h1, h2, p {
+    padding: 0 20px;
+  }
+  h2 {
+    letter-spacing: -1px;
+    font-size: 32px;
+  }
+  .header {
+    height: auto;
+    background-position: 65%;
+  }
+  .center {
+    padding-top: 100px;
+  }
+  .e96-logo {
+    width: 30%;
+    background-size: contain;
+  }
+  .openbank-logo {
+    width: 60%;
+    margin-left: 10%;
+    background-size: contain;
+  }
+  .button {
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 20px;
+  }
+  .row {
+    margin: 0 auto;
+  }
+  .column {
+    display: block;
+    width: 100%;
+  }
+  li {
+    margin-right: 10px;
+  }
+  li > h4 {
+    font-size: 18px;
+  }
+  .card {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .card-info {
+    margin-left: 0;
+  }
+  .card-order {
+    margin-top: 0;
+  }
+  .card-order > p {
+    display: block;
+  }
+  .card-order > div {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .card-order > div > a {
+  }
+  .card-order > div > p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .form > h2 {
+    margin-bottom: 45px;
+  }
+  .form > iframe {
+    height: 1000px;
+  }
+
+  footer > .content > div {
+    padding: 0;
+  }
+  footer > .content > div > .logo-small {
+    width: auto;
+    display: block;
+  }
+  footer > .content > div > .logo-small > p {
+    margin-top: 30px;
+  }
+  footer > .content > div > .phone {
+    position: static;
+    margin-top: 20px;
+    width: auto;
+    display: block;
+    text-align: left;
+  }
+  footer > .content > div > .phone > h2 {
+    margin-bottom: 0;
+  }
+}
