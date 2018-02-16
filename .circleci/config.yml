@@ -1,0 +1,18 @@
+version: 2
+jobs:
+    build:
+        docker:
+           - image: e9platform/circleci:1.0.0
+        steps:
+           - checkout
+           - setup_remote_docker:
+               docker_layer_caching: true
+           - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
+           - run:
+               name: Build App
+               command: |
+                 docker pull e96tech/landings:${CIRCLE_BRANCH} || docker pull e96tech/landings || echo "Cannot download image"
+                 docker build --cache-from e96tech/landings:${CIRCLE_BRANCH} --cache-from e96tech/landings -t e96tech/landings:latest -t e96tech/landings:$CIRCLE_BRANCH .
+           - deploy:
+               name: Push Images
+               command: docker push e96tech/landings:$CIRCLE_BRANCH

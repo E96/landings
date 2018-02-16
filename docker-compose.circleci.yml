@@ -1,0 +1,5 @@
+version: '2'
+
+services:
+  landings:
+    image: e96tech/landings:${CIRCLE_BRANCH}
