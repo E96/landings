@@ -1,0 +1,343 @@
+@font-face {
+    font-family: SegoeUILight;
+    src: url(fonts/SegoeUILight.eot);
+    src: local(SegoeUILight), url(fonts/SegoeUILight.ttf);
+}
+@font-face {
+    font-family: SegoeUIBold;
+    src: url(fonts/SegoeUIBold.eot);
+    src: local(SegoeUIBold), url(fonts/SegoeUIBold.ttf);
+}
+body {
+    font-family: SegoeUILight, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #888;
+}
+.container {
+    max-width: 964px;
+    margin: 0 auto;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-size: 36px;
+    font-weight: 300;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 300;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+p {
+    font-size: 16px;
+}
+
+.logo {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.row {
+    width: 33%;
+    vertical-align: top;
+    display: inline-block;
+}
+.row-2 {
+    width: 49%;
+    vertical-align: top;
+    display: inline-block;
+}
+.row-2 > div.lower {
+    padding-top: 35px;
+}
+.row-2 > div > img:first-child {
+    margin-right: 30px;
+}
+.col {
+    width: 25%;
+    display: inline-block;
+    font-size: 0;
+}
+
+.start {
+    background-color: #e0e6e9;
+    padding-bottom: 60px;
+    color: #000;
+}
+.start p {
+    font-size: 32px;
+}
+
+.goods {
+    background-color: #fafafa;
+    padding: 80px 0 60px;
+}
+.goods p {
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.goods h3 {
+    margin-bottom: 15px;
+}
+
+.row-2 > p {
+    margin-bottom: 10px;
+    text-align: left;
+    max-width: none;
+}
+.form {
+    background-color: #333333;
+    padding: 50px 0 80px;
+    color: #a6a6a6;
+}
+.form h2 {
+    padding: 0 20px;
+}
+form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+form > div {
+    width: inherit;
+    margin-bottom: 20px;
+}
+form > div > label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+form > div > input {
+    padding: 8px 10px 12px;
+    font-family: SegoeUILight, sans-serif;
+    width: inherit;
+    box-sizing: border-box;
+    font-size: 22px;
+    border: 0;
+}
+form > div > select {
+    padding: 8px 10px 12px;
+    background-color: #fff;
+    font-family: SegoeUILight, sans-serif;
+    width: inherit;
+    box-sizing: border-box;
+    font-size: 22px;
+    border: 0;
+    margin-bottom: 20px;
+}
+form .checkbox {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+form .checkbox > input {
+    display: none;
+}
+form .checkbox > input:checked + label::before {
+    content: '';
+    width: 10px;
+    height: 4px;
+    background-color: #333;
+    display: block;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    top: 16px;
+    left: 6px;
+}
+form .checkbox > input:checked + label::after {
+    content: '';
+    width: 15px;
+    height: 4px;
+    background-color: #333;
+    display: block;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+form .checkbox > label {
+    margin-bottom: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: inline-block;
+}
+form .checkbox > span {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    font-size: 20px;
+} 
+
+.conditions {
+    padding: 50px 0 80px;
+}
+.conditions h2 {
+    color: #000;
+}
+.conditions p {
+    text-align: left;
+}
+.conditions a {
+    color: #888;
+}
+.conditions a:hover {
+    color: #f60;
+}
+
+
+.choose {
+    height: 400px;
+    background-color: #000;
+}
+.choose img {
+    padding-top: 48px;
+    display: inline-block;
+}
+.choose .button {
+    font-size: 36px;
+    color: #fff;
+    border: 1px solid;
+    padding: 20px 70px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 150px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+.choose .button:hover {
+    color: #ff8d41;
+}
+.choose .button:active {
+    margin-top: 160px;
+    margin-bottom: 0;
+}
+
+.steps {
+    padding: 60px 0;
+}
+.steps h3 {
+    margin: 30px auto 0;
+}
+.number {
+    width: 70px;
+    height: 60px;
+    padding-top: 10px;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f60;
+    color: #fff;
+    padding: 8px 25px 10px;
+    font-size: 20px;
+    font-family: SegoeUILight, sans-serif;
+    border: 0;
+    margin-bottom: 2px;
+    margin-top: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: #ff4301;
+}
+.btn:focus,
+.btn:active {
+    background-color: #ff4301;
+    margin-bottom: 0;
+    margin-top: 2px;
+    outline: none;
+}
+#success {
+    font-size: 20px;
+    margin-left: 30px;
+    display: none;
+}
+
+p.bold {
+    font-weight: bold;
+    font-family: SegoeUIBold, sans-serif;
+}
+.rouble {
+    height: 12px;
+}
+@media screen and (max-width: 900px) {
+    .choose {
+        height: 491px;
+    }
+    .choose img {
+        padding-top: 200px;
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+    .choose .button {
+        position: relative;
+        top: -430px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .choose .button:active {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .row,
+    .row-2,
+    .col {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        padding: 0 30px;
+    }
+    .row-2 > p {
+        max-width: 500px;
+    }
+    form {
+        width: 400px;
+    }
+    .conditions .container {
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .row-2 > div > img {
+        width: 40%;
+    }
+    form {
+        width: 250px;
+    }
+    .choose {
+        height: 364px;
+    }
+    .choose img {
+        padding-top: 170px;
+        width: 200px;
+    }
+    .choose .button {
+        width: 250px;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 14px;
+        position: relative;
+        top: -320px;
+    }
+}
