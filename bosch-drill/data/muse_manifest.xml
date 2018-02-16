@@ -1,0 +1,53 @@
+<manifest alg="2" build="2015.2.1.352" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="bosch-drill.e96.ru" resolutions="1x" timestamp="1479375001979">
+  <folder name="css">
+    <file name="site_global.css" crc="3916556066"/>
+    <file name="index.css" crc="3894389365" ref="index"/>
+    <file name="nomq_index.css" crc="305634285" ref="index"/>
+    <file name="iefonts_index.css" crc="3824530138" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="index"/>
+    <file name="museutils.js" crc="3851988764" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4242129463" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="index"/>
+    <file name="pie.js" crc="3831537696" ref="index"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="516761069" ref="index"/>
+    <file name="require.js" crc="4108833657" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="background.jpg" crc="4294681002" ref="index"/>
+    <file name="logo3.png" crc="4214745432" seo="true" ref="index"/>
+    <file name="u5081-grad.png" crc="303645455" ref="index"/>
+    <file name="u5081-r-grad.png" crc="160368106" ref="index"/>
+    <file name="1479220059_shopping-cart.svg" crc="528879903" seo="true" ref="index"/>
+    <file name="1479220059_shopping-cart_poster_.png" crc="3927049326" ref="index"/>
+    <file name="drill3.png" crc="325017661" seo="true" ref="index"/>
+    <file name="speeds.png" crc="4195136413" ref="index"/>
+    <file name="shield.png" crc="417648703" seo="true" ref="index"/>
+    <file name="rotate.png" crc="362612168" seo="true" ref="index"/>
+    <file name="diod.png" crc="3949234569" seo="true" ref="index"/>
+    <file name="drill_ico.png" crc="205238000" seo="true" ref="index"/>
+    <file name="_4393632.jpg" crc="147702126" seo="true" ref="index"/>
+    <file name="gift_bosch.png" crc="491822006" seo="true" ref="index"/>
+    <file name="u5081-grad2.png" crc="3882123863" ref="index"/>
+    <file name="u5081-r-grad2.png" crc="4046001425" ref="index"/>
+    <file name="drill3451x505.png" crc="4175333112" seo="true" ref="index"/>
+    <file name="u5081-grad3.png" crc="465264165" ref="index"/>
+    <file name="u5081-r-grad3.png" crc="87847180" ref="index"/>
+    <file name="_4393632229x242.jpg" crc="3990996422" seo="true" ref="index"/>
+    <file name="gift_bosch240x342.png" crc="3896617366" seo="true" ref="index"/>
+    <file name="drill3228x254.png" crc="4045201857" seo="true" ref="index"/>
+    <file name="u5081-grad4.png" crc="3817557002" ref="index"/>
+    <file name="u5081-r-grad4.png" crc="374611568" ref="index"/>
+    <file name="gift_bosch255x364.png" crc="3902503085" seo="true" ref="index"/>
+    <file name="drill3280x314.png" crc="251222319" seo="true" ref="index"/>
+    <file name="u5081-grad5.png" crc="4041663185" ref="index"/>
+    <file name="u5081-r-grad5.png" crc="255104210" ref="index"/>
+    <file name="_4393632280x295.jpg" crc="4034621680" seo="true" ref="index"/>
+    <file name="gift_bosch222x316.png" crc="4144173441" seo="true" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+  </folder>
+  <file name="index.html" crc="3924987610" seo="true" mt="1479374908016" redirect="true"/>
+</manifest>
