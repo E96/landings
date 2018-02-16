@@ -1,0 +1,496 @@
+@font-face {
+    font-family: Akrobat;
+    src: url('../fonts/Akrobat-Thin.otf');
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?oxwf5m');
+    src:  url('../fonts/icomoon.eot?oxwf5m#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?oxwf5m') format('truetype'),
+        url('../fonts/icomoon.woff?oxwf5m') format('woff'),
+        url('../fonts/icomoon.svg?oxwf5m#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-rouble {
+    font-weight: 300;
+    font-size: 20px;
+    position: relative;
+    top: 1px;
+}
+.icon-rouble:before {
+    content: "\e901";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.content {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 300px;
+    background-image: url('../img/header.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.header img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.label1 {
+    background-color: #d81c5e;
+    max-width: 635px;
+    height: 65px;
+    margin: 0 auto;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.label1 > span {
+    font-family: 'Akrobat';
+    font-size: 54px;
+    letter-spacing: 2.5px;
+    color: #fff;
+    position: relative;
+    top: -4px;
+}
+.label2 {
+    background-color: #01782b;
+    max-width: 520px;
+    height: 53px;
+    margin: 5px auto 0;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.label2 > span {
+    font-family: 'Akrobat';
+    font-size: 36px;
+    letter-spacing: 1.8px;
+    color: #fff;
+    position: relative;
+    top: 3px;
+}
+
+
+
+.row {
+    margin-bottom: 40px;
+    font-size: 0;
+}
+.col-2 {
+    width: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.col-1 a,
+.col-2 a {
+    text-decoration: none;
+}
+.row > .col-2:first-child {
+    padding-right: 20px;
+}
+.row > .col-2:last-child {
+    padding-left: 20px;
+}
+.col-1 {
+    width: 100%;
+    display: inline-block;
+}
+.man {
+    background-color: #353230;
+    height: 360px;
+    border-radius: 6px;
+    position: relative;
+}
+.man > .img {
+    background-image: url('../img/man.png');
+    height: 300px;
+    background-position: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.man > .text {
+    height: 60px;
+    text-align: center;
+    font-family: 'Akrobat';
+    font-size: 40px;
+    color: #fff;
+}
+.man > .text > span {
+    position: relative;
+    top: 2px;
+}
+.man > .hover {
+    display: none;
+    background-color: rgba(255, 102, 0, 0.2);
+    height: 300px;
+    position: absolute;
+    width: 100%;
+}
+.man:hover > .hover {
+    display: block;
+}
+.woman {
+    background-color: #2b4355;
+    height: 360px;
+    border-radius: 6px;
+    position: relative;
+}
+.woman > .img {
+    background-image: url('../img/woman.png');
+    height: 300px;
+    background-position: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.woman > .text {
+    height: 60px;
+    text-align: center;
+    font-family: 'Akrobat';
+    font-size: 40px;
+    color: #fff;
+}
+.woman > .text > span {
+    position: relative;
+    top: 2px;
+}
+.woman > .hover {
+    display: none;
+    background-color: rgba(255, 102, 0, 0.2);
+    height: 300px;
+    position: absolute;
+    width: 100%;
+}
+.woman:hover > .hover {
+    display: block;
+}
+.children {
+    background-color: #016e7d;
+    height: 360px;
+    border-radius: 6px;
+    position: relative;
+}
+.children > .img {
+    background-image: url('../img/children.png');
+    height: 300px;
+    background-position: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.children > .text {
+    height: 60px;
+    text-align: center;
+    font-family: 'Akrobat';
+    font-size: 40px;
+    color: #fff;
+}
+.children > .text > span {
+    position: relative;
+    top: 2px;
+}
+.children > .hover {
+    display: none;
+    background-color: rgba(255, 102, 0, 0.2);
+    height: 300px;
+    position: absolute;
+    width: 100%;
+}
+.children:hover > .hover {
+    display: block;
+}
+
+/*background-color: rgba(255, 102, 0, 0.5);*/
+
+
+.presents {
+    background-color: #2f3337;
+    text-align: center;
+    padding: 50px 0 40px;
+    font-size: 0;
+}
+.presents > .container > .content > p {
+    margin: 0 0 40px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.presents > .container > .content > .col {
+    display: inline-block;
+}
+.presents > .container > .content > .col > a > .present {
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 42px;
+}
+.presents > .container > .content > .col > a:hover > .present {
+    color: #f60;
+}
+.presents > .container > .content > .col > a > .present > .img {
+    display: block;
+    height: 102px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.presents > .container > .content > .col > a > .present > span {
+    border-bottom: 1px solid;
+    position: relative;
+    top: -20px;
+    font-size: 24px;
+}
+.presents > .container > .content > .col > a > .present-1 {
+    color: #47dfc8;
+    border: 1px solid;
+}
+.presents > .container > .content > .col > a > .present-1 > .img {
+    background-image: url('../img/present_1.png');
+}
+.presents > .container > .content > .col > a:hover > .present-1 > .img {
+    background-image: url('../img/present_1_hover.png');
+}
+.presents > .container > .content > .col > a > .present-2 {
+    color: #5ed845;
+    border: 1px solid;
+}
+.presents > .container > .content > .col > a > .present-2 > .img {
+    background-image: url('../img/present_2.png');
+}
+.presents > .container > .content > .col > a:hover > .present-2 > .img {
+    background-image: url('../img/present_2_hover.png');
+    position: relative;
+    top: 3px;
+}
+.presents > .container > .content > .col > a > .present-3 {
+    color: #f9b603;
+    border: 1px solid;
+    margin-right: 0;
+}
+.presents > .container > .content > .col > a > .present-3 > .img {
+    background-image: url('../img/present_3.png');
+}
+.presents > .container > .content > .col > a:hover > .present-3 > .img {
+    background-image: url('../img/present_3_hover.png');
+    position: relative;
+    top: 1px;
+}
+
+.certificates-sale {
+    background-color: #e6e6e6;
+    padding: 40px 0 120px;
+}
+.certificates-sale .row {
+    margin-bottom: 0;
+}
+.certificates {
+    background-image: url('../img/certificates_curves.png');
+    height: 300px;
+    border-radius: 6px;
+    position: relative;
+}
+.certificates > .img {
+    background-image: url('../img/certificates.png');
+    height: 240px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.certificates > .text {
+    height: 60px;
+    text-align: center;
+    font-family: 'Akrobat';
+    font-size: 40px;
+    color: #fff;
+}
+.certificates > .text > span {
+    position: relative;
+    top: 2px;
+}
+.certificates > .hover {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 300px;
+    position: absolute;
+    width: 100%;
+}
+.certificates:hover > .hover {
+    display: block;
+}
+
+
+.sale {
+    background-image: url('../img/sale.png');
+    height: 300px;
+    border-radius: 6px;
+    position: relative;
+}
+.sale > .img {
+    /*background-image: url('../img/certificates.png');*/
+    height: 240px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sale > .text {
+    height: 60px;
+    text-align: center;
+    font-family: 'Akrobat';
+    font-size: 40px;
+    color: #fff;
+}
+.sale > .text > span {
+    position: relative;
+    top: 2px;
+}
+.sale > .hover {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 300px;
+    position: absolute;
+    width: 100%;
+}
+.sale:hover > .hover {
+    display: block;
+}
+
+
+.title {
+    font-size: 40px;
+    margin: 40px 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+.special-row {
+    margin-bottom: 150px;
+    text-align: center;
+}
+.special {
+    width: 290px;
+    height: 200px;
+    background-color: #dadada;
+    display: inline-block;
+    margin-right: 55px;
+    border-radius: 8px;
+}
+.special:last-child {
+    margin-right: 0;
+}
+
+.break {
+    display: none;
+}
+
+footer {
+    background-color: #292929;
+    color: #959595;
+    padding: 30px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .man > .text,
+    .woman > .text,
+    .children > .text,
+    .certificates > .text,
+    .sale > .text {
+        font-size: 32px;
+        position: relative;
+        top: 5px;
+    }
+    .presents > .container > .content > .col {
+        display: block;
+        margin: 0 auto 40px;
+    }
+    .presents > .container > .content > .col > a > .present {
+        margin: 0;
+    }
+    .special-row {
+        margin-bottom: 0;
+    }
+    .special,
+    .special:last-child {
+        display: block;
+        margin: 0 auto 40px;
+    }
+    .header {
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .label1,
+    .label2 {
+        height: auto;
+        line-height: 0.8;
+    }
+    .label1 {
+        padding: 10px 0;
+    }
+    .label2 {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .col-2 {
+        width: 100%;
+        margin-bottom: 30px;
+        display: block;
+    }
+    .row > .col-2:first-child,
+    .row > .col-2:last-child {
+        padding: 0;
+    }
+    .text {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .certificates,
+    .sale {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .break {
+        display: block;
+    }
+}
+@media screen and (max-width: 375px) {
+    .man > .text,
+    .woman > .text,
+    .children > .text,
+    .certificates > .text,
+    .sale > .text {
+        font-size: 26px;
+        position: relative;
+        top: 10px;
+    }
+    .special,
+    .presents > .container > .content > .col > a > .present {
+        width: 260px;
+    }
+}
