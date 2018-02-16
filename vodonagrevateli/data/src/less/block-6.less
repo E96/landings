@@ -1,0 +1,62 @@
+section.block-6 {
+
+  .img {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .master {
+    margin-top: 30px;
+    overflow: auto;
+    margin-bottom: 80px;
+
+    & > img {
+      width: 185px;
+      display: inline-block;
+      float: left;
+      margin-left: 30px;
+    }
+    .message {
+      margin-top: 20px;
+      position: relative;
+      display: inline-block;
+      float: right;
+      border: 1px solid @quote_border;
+      border-radius: 5px;
+      width: 670px;
+      padding: 10px 20px;
+      color: #333;
+      .f18;
+
+      h4 {
+        margin: 0 0 10px 0;
+        .ib;
+        .f20;
+      }
+
+      & > img {
+        position: absolute;
+        left: -29px;
+        top: 50px;
+      }
+
+      &.revert {
+        float: left;
+
+        & > img {
+          transform: scaleX(-1);
+          right: -29px;
+          left: auto;
+        }
+      }
+    }
+
+    &.full {
+      .message {
+        width: 890px;
+        margin-top: 0;
+      }
+    }
+  }
+
+}
