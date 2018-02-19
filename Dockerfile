@@ -1,5 +1,5 @@
 FROM devopsftw/baseimage
-MAINTAINER Andrey Kolobov <axelpal@e96.ru>
+MAINTAINER Alexander Palchikov <axelpal@e96.ru>
 
 
 RUN apt update && apt install -y nginx-full
