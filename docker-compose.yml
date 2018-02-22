@@ -5,15 +5,6 @@ services:
     image: e96tech/landings:latest
     environment:
       - LANDINGS_SERVICE=landings-dev
-      - VSHKOLU_LANDING_SERVER_NAME=vshkolu.e96.ru
-      - VODONAGREVATELI_LANDING_SERVER_NAME=vodonagrevateli.e96.ru
-      - VELO_LANDING_SERVER_NAME=velo.e96.ru
-      - GIFT_LANDING_SERVER_NAME=gift.e96.ru
-      - IPHONE_LANDING_SERVER_NAME=iphone.e96.ru
-      - FRANCHISE_LANDING_SERVER_NAME=franchise.e96.ru
-      - CYBERMONDAY_LANDING_SERVER_NAME=cybermonday.e96.ru
-      - BOSCH_DRILL_LANDING_SERVER_NAME=bosch-drill.e96.ru
-      - BOILER_LANDING_SERVER_NAME=kotli.e96.ru
-      - OPENBANK_LANDING_SERVER_NAME=openbank.e96.ru
+      - LANDINGS_DOMAIN=e96.ru
     build: .
     network_mode: bridge

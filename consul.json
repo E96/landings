@@ -4,16 +4,16 @@
     "tags": [
       "revision",
       "http",
-      "http:${VSHKOLU_LANDING_SERVER_NAME:-vshkolu.shopfront.docker}",
-      "http:${VODONAGREVATELI_LANDING_SERVER_NAME:-vodonagrevateli.shopfront.docker}",
-      "http:${VELO_LANDING_SERVER_NAME:-velo.shopfront.docker}",
-      "http:${GIFT_LANDING_SERVER_NAME:-gift.shopfront.docker}",
-      "http:${IPHONE_LANDING_SERVER_NAME:-iphone.shopfront.docker}",
-      "http:${FRANCHISE_LANDING_SERVER_NAME:-franchise.shopfront.docker}",
-      "http:${CYBERMONDAY_LANDING_SERVER_NAME:-cybermonday.shopfront.docker}",
-      "http:${BOSCH_DRILL_LANDING_SERVER_NAME:-bosch-drill.shopfront.docker}",
-      "http:${BOILER_LANDING_SERVER_NAME:-boiler.shopfront.docker}",
-      "http:${OPENBANK_LANDING_SERVER_NAME:-openbank.shopfront.docker}"
+      "http:vshkolu.${LANDINGS_DOMAIN:-shopfront.docker}",
+      "http:vodonagrevateli.${LANDINGS_DOMAIN:-shopfront.docker}",
+      "http:velo.${LANDINGS_DOMAIN:-shopfront.docker}",
+      "http:gift.${LANDINGS_DOMAIN:-shopfront.docker}",
+      "http:iphone.${LANDINGS_DOMAIN:-shopfront.docker}",
+      "http:franchise.${LANDINGS_DOMAIN:-shopfront.docker}",
+      "http:cybermonday.${LANDINGS_DOMAIN:-shopfront.docker}",
+      "http:bosch-drill.${LANDINGS_DOMAIN:-shopfront.docker}",
+      "http:boiler.${LANDINGS_DOMAIN:-shopfront.docker}",
+      "http:openbank.${LANDINGS_DOMAIN:-shopfront.docker}"
     ],
     "port": 80,
     "checks": [
