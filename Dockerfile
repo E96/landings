@@ -8,7 +8,7 @@ ADD consul.json /etc/consul/consul.json
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD landings.conf /etc/nginx/sites-available/default
 COPY service-nginx.sh /etc/service/nginx/run
-ADD . /landings
+ADD landings /landings
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT [ "/entrypoint.sh" ]
